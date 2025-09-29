@@ -48,7 +48,7 @@ Seu objetivo é fornecer uma alternativa de código aberto a ferramentas proprie
       <td align="center" width="150"> 
         <a href="https://github.com/"> 
           <img src="https://github.com/CA1RO.png?size=140" width="80" style="border-radius:50%;" /> 
-          <br/><b>Cairo Flourenço</b> 
+          <br/><b>Cairo Florenço</b> 
         </a> 
       </td> 
       <td align="center" width="150"> 
