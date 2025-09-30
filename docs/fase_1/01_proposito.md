@@ -31,14 +31,80 @@ A plataforma ao otimizar e automatizar o processo de agendamento de reuniões, u
 
 
 
---------------------------------------------------
+---
 
-Fase posterior
+# 3. Seleção e priorização de características
+
+No presente trabalho, foram avaliadas diferentes características de qualidade da norma **SQUARE** com o objetivo de selecionar e priorizar aquelas mais relevantes para análise do software **cal.com**.  
+
+## 3.1 Seleção de características
+
+O *cal.com* é um sistema web para agendamento de reuniões que depende de integração com outros calendários e de acesso multiplataforma. Considerando esse contexto e o perfil dos usuários (corporativos e pessoais, com acesso via desktop e dispositivos móveis), foram inicialmente consideradas todas as características da norma SQUARE, por refletirem os fatores críticos de sucesso do software:
+
+- **Adequação funcional** – fornecer corretamente as funções de agendamento e integração com serviços externos.  
+- **Eficiência de desempenho** – otimizar tempo de resposta e uso de recursos do sistema.  
+- **Compatibilidade** – capacidade de operar em conjunto com outros softwares e sistemas.  
+- **Usabilidade** – facilidade de aprendizado e uso pelo usuário final.  
+- **Confiabilidade** – manter funcionamento estável e sem falhas críticas durante o uso.  
+- **Segurança** – proteção de dados e controle de acesso de usuários.  
+- **Manutenibilidade** – facilidade de atualização, correção e evolução do sistema.  
+- **Portabilidade** – garantir uso adequado em diferentes dispositivos, sistemas operacionais e navegadores.  
+
+## 3.2 Método de priorização: Matriz Impacto × Risco
+
+Para priorizar as características, utilizamos a **Matriz Impacto × Risco**, atribuindo valores de 1 (baixo) a 5 (alto) para cada dimensão:  
+
+- **Impacto**: grau em que a característica influencia diretamente a experiência do usuário e o sucesso do software.  
+- **Risco**: probabilidade de falhas ou limitações nessa característica comprometerem o uso do sistema.  
+
+A pontuação final (I × R) permitiu ordenar as características por prioridade, tornando o processo **quantitativo, transparente e replicável**.
+
+---
+
+
+
+| Característica            | Impacto | Risco | Prioridade (I×R) |
+|---------------------------|---------|-------|------------------|
+| Adequação funcional       | 5       | 4     | 20 |
+| Portabilidade             | 4       | 4     | 16 |
+| Compatibilidade           | 4       | 3     | 12 |
+| Usabilidade               | 4       | 3     | 12 |
+| Segurança                 | 4       | 3     | 12 |
+| Confiabilidade            | 3       | 3     | 9  |
+| Eficiência de desempenho  | 3       | 2     | 6  |
+| Manutenibilidade          | 2       | 2     | 4  |
+
+## 3.3 Justificativa da priorização
+
+- **Adequação funcional** apresentou a maior prioridade (20 pontos). Isso ocorre porque o *cal.com* depende diretamente do correto funcionamento de suas funções principais — criação de reuniões, sincronização com calendários externos e envio de convites. Uma falha nessa característica comprometeria imediatamente a utilidade do software.  
+- **Portabilidade** ficou em segundo lugar (16 pontos), refletindo a necessidade de que o sistema seja acessível em diferentes dispositivos e navegadores, essencial para ampliar a base de usuários.  
+- Características como **compatibilidade**, **usabilidade** e **segurança** também apresentaram relevância (12 pontos cada), mas foram consideradas secundárias neste contexto, pois impactam menos diretamente o sucesso imediato do software.  
+- **Confiabilidade**, **eficiência de desempenho** e **manutenibilidade** tiveram menor prioridade. Isso não significa que sejam irrelevantes, apenas que apresentam menor risco imediato de comprometer o uso do sistema, podendo ser tratadas de forma incremental.
+
+Além disso, a análise considera que mudanças no contexto de uso poderiam alterar a priorização. Por exemplo, se o *cal.com* fosse implantado em empresas com políticas rígidas de segurança, a característica **Segurança** poderia receber maior impacto e risco, subindo na matriz e podendo se tornar prioritária.
+
+## 3.4 Trade-offs
+
+A priorização demonstra que a ênfase deve estar em **adequação funcional** e **portabilidade**. Isso implica que:
+
+- Questões de **eficiência de desempenho** (ex.: tempo de resposta em cenários de grande carga) e **manutenibilidade** (ex.: facilidade de refatoração futura) podem receber menor atenção em curto prazo.  
+- A escolha de **portabilidade** em relação a características com pontuação próxima, como **segurança** e **usabilidade**, reflete a importância estratégica de garantir que o software seja amplamente acessível e utilizável em diferentes dispositivos e ambientes.  
+- Como trade-off, a ênfase em funcionalidades e portabilidade pode adiar a otimização da experiência do usuário ou reforços de segurança, mas garante primeiro a entrega de valor essencial: fazer o que promete e estar disponível em qualquer lugar.
+
+A análise pela matriz Impacto × Risco justifica a seleção de **adequação funcional** e **portabilidade** como características prioritárias na avaliação do *cal.com*, garantindo tanto a entrega correta das funções quanto a acessibilidade em múltiplos contextos de uso.
+
+---
+
+prox seção
+
+
+
 ## Histórico de Versões
 
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
 | `1.0`  | 30/09/2025 | Criação da estrutura inicial da página e inclusão do texto e referências bibliográficas | [Pedro Braga](https://github.com/Stain19) |
+| `1.1`  | 30/09/2025 | Criação da seção "Seleção e priorização de características" | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 
 ---
 
