@@ -3,14 +3,42 @@ site_url: https://fcte-qualidade-de-software-1.github.io/2025-2_T01_HEDDY-LAMAR/
 docs_dir: docs
 repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T01_HEDDY-LAMAR
 repo_name: FCTE-Qualidade-de-Software-1/2025-2_T01_HEDDY-LAMAR
-nav:
-  - Home: index.md
-  - Fases:
-      - Fase 01 - Requisitos de avaliação:
-        - Propósito e Uso dos resultados: fase_1/01_proposito.md
+
 theme:
   name: material
+  logo: assets/logo-unb.png
+  favicon: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+    - scheme: slate
+      primary: black
+      accent: red
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Home: index.md
+  - "Fase 01":
+    - "Requisitos de avaliação": fase_1/01_proposito.md
+  - "Fase 02": fase_2/index.md
+  - "Fase 03": fase_3/index.md
+  - "Fase 04": fase_4/index.md
+
 plugins:
   - minify
+
 markdown_extensions:
   - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
