@@ -27,8 +27,8 @@ theme:
 
 nav:
   - Home: index.md
-  - "Fase 01":
-    - "Requisitos de avaliação": fase_1/01_proposito.md
+  - "Fase 01 - Requisitos de avaliação": 
+    - "Propósito da Avaliação e Uso pretendido": fase_1/01_proposito.md
   - "Fase 02": fase_2/index.md
   - "Fase 03": fase_3/index.md
   - "Fase 04": fase_4/index.md
