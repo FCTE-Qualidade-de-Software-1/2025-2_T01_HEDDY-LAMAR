@@ -27,6 +27,10 @@ O Cal.com se encaixa bem na categoria COTS, pois é um produto padronizado, ofer
 
 O Cal.com é um
 
+
+--------------------------------------------------
+
+Fase posterior
 ## Histórico de Versões
 
 | Versão | Data       | Descrição                                                               | Autor                               |
