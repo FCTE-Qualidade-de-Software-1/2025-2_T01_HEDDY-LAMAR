@@ -25,7 +25,10 @@ O Cal.com se encaixa bem na categoria COTS, pois é um produto padronizado, ofer
 
 ## 2.3 Classificação por Domínio de Aplicação: Software Comercial
 
-O Cal.com é um
+De acordo com a classificação de Pressman[^5], o Cal.com é um Software Comercial (Business Software), pois é um software desenvolvido com o objetivo dar suporte a operações comerciais e decisões administrativas, automatizando tarefas e processando informações de negócio.
+
+A plataforma ao otimizar e automatizar o processo de agendamento de reuniões, uma tarefa essencialmente administrativa e comercial, se enquadra perfeitamente na categoria citada acima, permitindo o aumento da eficiência e produtividade dos seus usuários.
+
 
 
 --------------------------------------------------
@@ -49,3 +52,5 @@ Fase posterior
 Disponível em: https://www.tatvasoft.com/outsourcing/2021/03/what-is-cots.html. Acesso em 30 set.2025
 
 [^4]: CALCOM. cal.com: The open-source scheduling infrastructure. GitHub, 2025. Disponível em: https://github.com/calcom/cal.com. Acesso em: 30 set. 2025.
+
+[^5]: PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma Abordagem Profissional. 8. ed. Porto Alegre: AMGH, 2016.
