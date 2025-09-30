@@ -6,8 +6,11 @@ repo_name: FCTE-Qualidade-de-Software-1/2025-2_T01_HEDDY-LAMAR
 nav:
   - Home: index.md
   - Fases:
-      - Fase 01: fases1.md
+      - Fase 01 - Requisitos de avaliação:
+        - Propósito e Uso dos resultados: fase_1/01_proposito.md
 theme:
   name: material
 plugins:
   - minify
+markdown_extensions:
+  - footnotes
