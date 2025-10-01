@@ -13,17 +13,55 @@ Os resultados obtidos servirão para os seguintes propósitos[^1]:
 
 ---
 
-# 2. **Tipo de Produto e Descrição do Software**
+# 2. **Requisitante e Partes Interessadas (Stakeholders)**
+
+Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as partes interessadas, seus papéis e como os resultados desta análise influenciam suas decisões e critérios de sucesso. 
+
+## 2.1. Usuários Finais
+
+* Papel: São os indivíduos e equipes que utilizam o Cal.com no dia a dia para gerenciar suas agendas e marcar reuniões. Este grupo pode incluir desde profissionais autônomos e freelancers até equipes inteiras dentro de grandes empresas, além dos clientes e convidados que interagem com a plataforma para marcar um horário.
+
+* Influência na Avaliação: Para este grupo, a avaliação de qualidade serve como um fator de confiança e eficiência.
+
+* Critério de Sucesso: O sucesso é medido pela capacidade de agendar reuniões de forma eficiente e sem atritos. A avaliação confirma se a ferramenta possui as funcionalidades necessárias e se funciona de maneira consistente em qualquer dispositivo ou navegador que eles ou seus convidados utilizem, garantindo confiança e uma boa experiência de uso.
+
+## 2.2. Compradores e Gestores
+
+* Papel: Representam as empresas ou equipes que estão considerando adquirir ou adotar o Cal.com como solução de agendamento padrão. Podem ser gestores de TI, chefes de departamento ou donos de pequenas empresas.
+
+* Influência na Avaliação: Este grupo utiliza a avaliação como uma ferramenta para justificar a decisão de compra e mitigar riscos.
+
+* Critério de Sucesso: O sucesso é a adoção de uma ferramenta que resolva as necessidades da empresa com baixo custo de implementação e suporte. A avaliação valida se o Cal.com atende aos requisitos do negócio e se é compatível com o ambiente tecnológico da organização, garantindo o retorno sobre o investimento.
+
+## 2.3. Equipe de Desenvolvimento e Manutenção do Cal.com
+
+* Papel: São os engenheiros, designers e gerentes de produto responsáveis por construir, manter e evoluir o software Cal.com.
+
+* Influência na Avaliação: Para a equipe de desenvolvimento, esta avaliação externa é uma fonte valiosa de feedback para identificar ações corretivas e definir estratégias de evolução do produto.
+
+* Critério de Sucesso: O sucesso está em obter indicadores que auxiliem na construção de um produto estável, competitivo e com alta satisfação do usuário. Esta avaliação externa fornece um feedback acionável, apontando falhas e melhorias tanto nas funcionalidades (adequação funcional) quanto na consistência da experiência entre plataformas (portabilidade), orientando o desenvolvimento.
+
+## 2.4. Equipe de Marketing e Vendas
+
+* Papel: São os profissionais responsáveis por comunicar o valor do Cal.com ao mercado, atrair novos clientes e posicionar o produto frente a concorrentes como o Calendly.
+
+* Influência na Avaliação: A avaliação de qualidade fornece argumentos concretos para serem usados como diferencial competitivo.
+
+* Critério de Sucesso: O sucesso é comunicar o valor do produto de forma convincente para gerar vendas, posicionando o Cal.com como uma solução robusta em funcionalidades e, ao mesmo tempo, flexível e acessível em qualquer dispositivo.
+
+---
+
+# 3. **Tipo de Produto e Descrição do Software**
 
 O Cal.com é uma plataforma web de agendamento de reuniões, que tem como premissa centralizar todas as informações em soluções de calendários em um só lugar.
 
 Para classificar essa plataforma, é possível utilizar duas óticas complementares: o modelo de negócio e o domínio de aplicação.
 
-## 2.2 Classificação por Modelo de Negócio: COTS (Commercial Off-The-Shelf)[^3]
+## 3.2 Classificação por Modelo de Negócio: COTS (Commercial Off-The-Shelf)[^3]
 
 O Cal.com se encaixa bem na categoria COTS, pois é um produto padronizado, oferecido como um modelo SaaS (Software as a Service) ou via auto-hospedagem (self-hosting) de seu código aberto[^4]. Todos os usuários utilizam a mesma base de código e funcionalidades, que são atualizadas de forma centralizada pelo desenvolvedor, se encaixando perfeitamente no modelo COTS.
 
-## 2.3 Classificação por Domínio de Aplicação: Software Comercial
+## 3.3 Classificação por Domínio de Aplicação: Software Comercial
 
 De acordo com a classificação de Pressman[^5], o Cal.com é um Software Comercial (Business Software), pois é um software desenvolvido com o objetivo dar suporte a operações comerciais e decisões administrativas, automatizando tarefas e processando informações de negócio.
 
@@ -33,11 +71,11 @@ A plataforma ao otimizar e automatizar o processo de agendamento de reuniões, u
 
 ---
 
-# 3. **Seleção e priorização de características**
+# 4. **Seleção e priorização de características**
 
 No presente trabalho, foram avaliadas diferentes características de qualidade da norma **SQUARE** com o objetivo de selecionar e priorizar aquelas mais relevantes para análise do software **cal.com**.  
 
-## 3.1 Seleção de características
+## 4.1 Seleção de características
 
 O *cal.com* é um sistema web para agendamento de reuniões que depende de integração com outros calendários e de acesso multiplataforma. Considerando esse contexto e o perfil dos usuários (corporativos e pessoais, com acesso via desktop e dispositivos móveis), foram inicialmente consideradas todas as características da norma SQUARE, por refletirem os fatores críticos de sucesso do software:
 
@@ -50,7 +88,7 @@ O *cal.com* é um sistema web para agendamento de reuniões que depende de integ
 - **Manutenibilidade** – facilidade de atualização, correção e evolução do sistema.  
 - **Portabilidade** – garantir uso adequado em diferentes dispositivos, sistemas operacionais e navegadores.  
 
-## 3.2 Método de priorização: Matriz Impacto × Risco
+## 4.2 Método de priorização: Matriz Impacto × Risco
 
 Para priorizar as características, utilizamos a **Matriz Impacto × Risco**, atribuindo valores de 1 (baixo) a 5 (alto) para cada dimensão:  
 
@@ -74,7 +112,7 @@ A pontuação final (I × R) permitiu ordenar as características por prioridade
 | Eficiência de desempenho  | 3       | 2     | 6  |
 | Manutenibilidade          | 2       | 2     | 4  |
 
-## 3.3 Justificativa da priorização
+## 4.3 Justificativa da priorização
 
 - **Adequação funcional** apresentou a maior prioridade (20 pontos). Isso ocorre porque o *cal.com* depende diretamente do correto funcionamento de suas funções principais — criação de reuniões, sincronização com calendários externos e envio de convites. Uma falha nessa característica comprometeria imediatamente a utilidade do software.  
 - **Portabilidade** ficou em segundo lugar (16 pontos), refletindo a necessidade de que o sistema seja acessível em diferentes dispositivos e navegadores, essencial para ampliar a base de usuários.  
@@ -83,7 +121,7 @@ A pontuação final (I × R) permitiu ordenar as características por prioridade
 
 Além disso, a análise considera que mudanças no contexto de uso poderiam alterar a priorização. Por exemplo, se o *cal.com* fosse implantado em empresas com políticas rígidas de segurança, a característica **Segurança** poderia receber maior impacto e risco, subindo na matriz e podendo se tornar prioritária.
 
-## 3.4 Trade-offs
+## 4.4 Trade-offs
 
 A priorização demonstra que a ênfase deve estar em **adequação funcional** e **portabilidade**. Isso implica que:
 
@@ -95,7 +133,7 @@ A análise pela matriz Impacto × Risco justifica a seleção de **adequação f
 
 ---
 
-# **4.Modelo de Qualidade**
+# 5. **Modelo de Qualidade**
 
 As características de qualidade de software escolhidas para esta avaliação do **Cal.com**, com base na norma ISO/IEC 25010 (SQuaRE), são: **Funcionalidade** e **Portabilidade**.
 
@@ -122,6 +160,7 @@ Os critérios adotados para a escolha destas características foram:
 | `1.0`  | 30/09/2025 | Criação da estrutura inicial da página e inclusão do texto e referências bibliográficas | [Pedro Braga](https://github.com/Stain19) |
 | `1.1`  | 30/09/2025 | Criação da seção "Seleção e priorização de características" | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.2`  | 30/09/2025 | Criação da seção "Modelo de Qualidade" | [Vinicius Alves](https://github.com/vinialves2020) |
+| `1.3`  | 30/09/2025 | Criação da seção "Requisitante e Partes Interessadas" | [Cairo Florenço](https://github.com/CA1RO) |
 
 ---
 
