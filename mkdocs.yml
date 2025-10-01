@@ -24,14 +24,11 @@ theme:
     - content.tabs.link
     - content.code.copy
     - content.code.annotate
+    - navigation.tabs.sticky
 
 nav:
   - Home: index.md
-  - "Fase 01 - Requisitos de avaliação": 
-    - "Propósito da Avaliação e Uso pretendido": fase_1/01_proposito.md
-  - "Fase 02": fase_2/index.md
-  - "Fase 03": fase_3/index.md
-  - "Fase 04": fase_4/index.md
+  - "Fase 01 - Requisitos de avaliação": fase_1/01_proposito.md
   - "Contribuções": contribuicao/fase_1.md
 
 plugins:

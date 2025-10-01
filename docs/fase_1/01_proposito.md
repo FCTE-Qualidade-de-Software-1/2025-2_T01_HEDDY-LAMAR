@@ -2,7 +2,7 @@
 
 ## 1. **Propósito da Avaliação**
 
-O propósito desta avaliação é analisar a qualidade do software `cal.com` sob as perspectivas de Portabilidade e Adequação Funcional. A avaliação busca fornecer uma visão abrangente da qualidade do produto, identificando pontos fortes e fracos do sistema nessas áreas, com base na norma ISO/IEC 25010[^2].
+O propósito desta avaliação é analisar a qualidade do software **Cal.com** sob as perspectivas de Portabilidade e Adequação Funcional. A avaliação busca fornecer uma visão abrangente da qualidade do produto, identificando pontos fortes e fracos do sistema nessas áreas, com base na norma ISO/IEC 25010[^2].
 
 ### 1.1. Uso Pretendido
 
@@ -17,7 +17,7 @@ Os resultados obtidos servirão para os seguintes propósitos[^1]:
 
 ## 2. **Requisitante e Partes Interessadas (Stakeholders)**
 
-Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as partes interessadas, seus papéis e como os resultados desta análise influenciam suas decisões e critérios de sucesso. 
+Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as partes interessadas, seus papéis e como os resultados desta análise influenciam suas decisões e critérios de sucesso. Vale ressaltar que o Cal.com não possui documentação oficial que informe seus principais stakeholders. Por isso, a equipe Hedy Lamarr decidiu fazer esse levantamento, considerando os principais usuários e suas interações com a plataforma.
 
 ### 2.1. Usuários Finais
 
@@ -55,9 +55,7 @@ Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as parte
 
 ## 3. **Tipo de Produto e Descrição do Software**
 
-O Cal.com é uma plataforma web de agendamento de reuniões, que tem como premissa centralizar todas as informações em soluções de calendários em um só lugar.
-
-Para classificar essa plataforma, é possível utilizar duas óticas complementares: o modelo de negócio e o domínio de aplicação.
+Para classificar o Cal.com, é possível utilizar duas óticas complementares: o modelo de negócio e o domínio de aplicação.
 
 ### 3.2 Classificação por Modelo de Negócio: COTS (Commercial Off-The-Shelf)[^3]
 
@@ -105,11 +103,11 @@ O diagrama de contexto deixa claro que a qualidade das integrações é tão imp
 
 ## 4. **Seleção e priorização de características**
 
-No presente trabalho, foram avaliadas diferentes características de qualidade da norma **SQUARE** com o objetivo de selecionar e priorizar aquelas mais relevantes para análise do software **cal.com**.  
+No presente trabalho, foram avaliadas diferentes características de qualidade da norma **SQUARE** com o objetivo de selecionar e priorizar aquelas mais relevantes para análise do software **Cal.com**.  
 
 ### 4.1 Seleção de características
 
-O *cal.com* é um sistema web para agendamento de reuniões que depende de integração com outros calendários e de acesso multiplataforma. Considerando esse contexto e o perfil dos usuários (corporativos e pessoais, com acesso via desktop e dispositivos móveis), foram inicialmente consideradas todas as características da norma SQUARE, por refletirem os fatores críticos de sucesso do software:
+O *Cal.com* é um sistema web para agendamento de reuniões que depende de integração com outros calendários e de acesso multiplataforma. Considerando esse contexto e o perfil dos usuários (corporativos e pessoais, com acesso via desktop e dispositivos móveis), foram inicialmente consideradas todas as características da norma SQUARE, por refletirem os fatores críticos de sucesso do software:
 
 - **Adequação funcional** – fornecer corretamente as funções de agendamento e integração com serviços externos.  
 - **Eficiência de desempenho** – otimizar tempo de resposta e uso de recursos do sistema.  
@@ -146,12 +144,12 @@ A pontuação final (I × R) permitiu ordenar as características por prioridade
 
 ### 4.3 Justificativa da priorização
 
-- **Adequação funcional** apresentou a maior prioridade (20 pontos). Isso ocorre porque o *cal.com* depende diretamente do correto funcionamento de suas funções principais — criação de reuniões, sincronização com calendários externos e envio de convites. Uma falha nessa característica comprometeria imediatamente a utilidade do software.  
+- **Adequação funcional** apresentou a maior prioridade (20 pontos). Isso ocorre porque o *Cal.com* depende diretamente do correto funcionamento de suas funções principais — criação de reuniões, sincronização com calendários externos e envio de convites. Uma falha nessa característica comprometeria imediatamente a utilidade do software.  
 - **Portabilidade** ficou em segundo lugar (16 pontos), refletindo a necessidade de que o sistema seja acessível em diferentes dispositivos e navegadores, essencial para ampliar a base de usuários.  
 - Características como **compatibilidade**, **usabilidade** e **segurança** também apresentaram relevância (12 pontos cada), mas foram consideradas secundárias neste contexto, pois impactam menos diretamente o sucesso imediato do software.  
 - **Confiabilidade**, **eficiência de desempenho** e **manutenibilidade** tiveram menor prioridade. Isso não significa que sejam irrelevantes, apenas que apresentam menor risco imediato de comprometer o uso do sistema, podendo ser tratadas de forma incremental.
 
-Além disso, a análise considera que mudanças no contexto de uso poderiam alterar a priorização. Por exemplo, se o *cal.com* fosse implantado em empresas com políticas rígidas de segurança, a característica **Segurança** poderia receber maior impacto e risco, subindo na matriz e podendo se tornar prioritária.
+Além disso, a análise considera que mudanças no contexto de uso poderiam alterar a priorização. Por exemplo, se o *Cal.com* fosse implantado em empresas com políticas rígidas de segurança, a característica **Segurança** poderia receber maior impacto e risco, subindo na matriz e podendo se tornar prioritária.
 
 ### 4.4 Trade-offs
 
@@ -161,7 +159,7 @@ A priorização demonstra que a ênfase deve estar em **adequação funcional** 
 - A escolha de **portabilidade** em relação a características com pontuação próxima, como **segurança** e **usabilidade**, reflete a importância estratégica de garantir que o software seja amplamente acessível e utilizável em diferentes dispositivos e ambientes.  
 - Como trade-off, a ênfase em funcionalidades e portabilidade pode adiar a otimização da experiência do usuário ou reforços de segurança, mas garante primeiro a entrega de valor essencial: fazer o que promete e estar disponível em qualquer lugar.
 
-A análise pela matriz Impacto × Risco justifica a seleção de **adequação funcional** e **portabilidade** como características prioritárias na avaliação do *cal.com*, garantindo tanto a entrega correta das funções quanto a acessibilidade em múltiplos contextos de uso.
+A análise pela matriz Impacto × Risco justifica a seleção de **adequação funcional** e **portabilidade** como características prioritárias na avaliação do *Cal.com*, garantindo tanto a entrega correta das funções quanto a acessibilidade em múltiplos contextos de uso.
 
 ---
 
