@@ -69,7 +69,37 @@ De acordo com a classificação de Pressman[^5], o Cal.com é um Software Comerc
 
 A plataforma ao otimizar e automatizar o processo de agendamento de reuniões, uma tarefa essencialmente administrativa e comercial, se enquadra perfeitamente na categoria citada acima, permitindo o aumento da eficiência e produtividade dos seus usuários.
 
+### 3.4 Principais Funcionalidades
 
+O sistema é composto por um conjunto coeso de funções, incluindo:
+
+1) Criação e gestão de tipos de eventos (ex: reunião de 30 min, chamada de 1 hora).
+
+2) Integração com calendários externos (Google Calendar, Outlook 365, etc.).
+
+3) Disponibilização de páginas públicas de agendamento.
+
+4) Detecção automática de fuso horário.
+
+5) Envio de notificações e lembretes por e-mail.
+
+6) Gestão de agendamentos (cancelamento, reagendamento).
+
+7) Integração com aplicativos de videoconferência (Zoom, Google Meet).
+
+Durante a avaliação o foco será principalmente em duas funções:
+
+1) **Motor de Agendamento**: A lógica de verificação de disponibilidade em múltiplos calendários e fusos horários é o coração do sistema e a mais crítica. Falhas aqui comprometem todo o produto.
+
+2) **Serviço de Integração**: A robustez e a confiabilidade das conexões com APIs de terceiros (calendários, videoconferências) são cruciais para a experiência do usuário.
+
+### 3.5 Diagrama de Contexto[^6]
+
+O diagrama abaixo ilustra o Cal.com em seu ecossistema, mostrando as principais interações com usuários e sistemas externos.
+
+![Diagrama do Ecossistema Cal.com](../assets/EcossistemaCal.png)
+
+O diagrama de contexto deixa claro que a qualidade das integrações é tão importante quanto a do próprio software, portanto, o plano de ação de avaliação deve incluir testes rigorosos de interação com as APIs de Calendário e Videoconferência, verificando a corretude e tratamento de erros.
 
 ---
 
@@ -233,6 +263,25 @@ Assim, o Cal.com será avaliado de acordo com:
 
 Esse alinhamento entre teoria e prática fortalece a credibilidade da avaliação e garante que os resultados obtidos possam ser aplicados tanto em decisões técnicas quanto estratégicas.  
 
+## 7. **ODS Relacionados**
+
+O software Cal.com se conecta aos Objetivos de Desenvolvimento Sustentável (ODS) da ONU nos pontos:
+
+- **ODS 8: Trabalho Decente e Crescimento Econômico:**[^7] A avaliação se conecta à Meta 8.2, que visa "atingir níveis mais elevados de produtividade econômica por meio da diversificação, modernização tecnológica e inovação". O Cal.com contribui diretamente para essa meta ao automatizar o processo de agendamento de reuniões, o que reduz o tempo gasto em tarefas administrativas e aumenta a produtividade de profissionais e equipes, promovendo maior eficiência econômica.
+
+- **ODS 9: Indústria, Inovação e Infraestrutura:**[^8] O projeto se alinha também à Meta 9.c, que busca "aumentar significativamente o acesso às tecnologias de informação e comunicação". Como uma ferramenta de código aberto e auto-hospedada, o Cal.com democratiza o acesso a uma infraestrutura tecnológica de agendamento de qualidade, oferecendo uma alternativa gratuita às soluções comerciais. Isso promove a inovação e a soberania digital para pequenas empresas e organizações com recursos limitados, alinhando-se ao objetivo de acesso universal à tecnologia.
+
+## 8. **Declaração de Uso de Inteligência Artificial**
+
+Para a elaboração deste relatório, a equipe utilizou a ferramenta de inteligência artificial Gemini (Google). O uso da IA foi **estritamente limitado à fase inicial de sugestão e estruturação dos tópicos do documento**, servindo como um ponto de partida para a organização do conteúdo.
+
+Após o recebimento das sugestões de estrutura, foi realizada uma revisão humana minuciosa pela equipe. Todo o texto foi posteriormente redigido, adaptado e validado pelos autores para garantir sua total conformidade com os objetivos do trabalho, os materiais da disciplina e os critérios de avaliação propostos. A equipe ajustou cada seção para refletir com precisão as análises realizadas sobre o software Cal.com.
+
+É fundamental ressaltar que a IA não foi utilizada para a busca de fontes de pesquisa ou para a redação de conteúdo analítico. Todas as fontes bibliográficas e referências citadas no documento são resultado de pesquisa e verificação humanas.
+
+Desse modo, a autoria e a responsabilidade integral pelo conteúdo final, incluindo sua precisão e originalidade, são da equipe.
+
+
 ## Histórico de Versões
 
 | Versão | Data       | Descrição                                                               | Autor                               |
@@ -242,7 +291,7 @@ Esse alinhamento entre teoria e prática fortalece a credibilidade da avaliaçã
 | `1.2`  | 30/09/2025 | Criação da seção "Modelo de Qualidade" | [Vinicius Alves](https://github.com/vinialves2020) |
 | `1.3`  | 30/09/2025 | Criação da seção "Requisitante e Partes Interessadas" | [Cairo Florenço](https://github.com/CA1RO) |
 | `1.4`  | 01/10/2025 | Criação da seção "Escopo, Profundidade e Objetos de Avaliação" | [Antonio Carvalho](https://github.com/antonioscarvalho) |
-
+| `1.5`  | 01/10/2025 | Criação das seções "Tipo de Produto e Descrição do Software", "ODS Relacionados" e "Declaração de Uso de Inteligência Artificial" | [Atyrson Souto](https://github.com/Atyrson) |
 ---
 
 ## Referências
@@ -257,3 +306,9 @@ Disponível em: https://www.tatvasoft.com/outsourcing/2021/03/what-is-cots.html.
 [^4]: CALCOM. cal.com: The open-source scheduling infrastructure. GitHub, 2025. Disponível em: https://github.com/calcom/cal.com. Acesso em: 30 set. 2025.
 
 [^5]: PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de Software: Uma Abordagem Profissional. 8. ed. Porto Alegre: AMGH, 2016.
+
+[^6]: TRENTIM, Mário. Diagramas de Contexto: O Que São, Como Fazê-los e Exemplos Práticos. Dicas PMP, 16 maio 2024. Disponível em: https://dicaspmp.pmtech.com.br/diagramas-de-contexto/. Acesso em: 1 out. 2025.
+
+[^7]: NAÇÕES UNIDAS BRASIL. Objetivo 8: Trabalho Decente e Crescimento Econômico. [S. l.]: Nações Unidas Brasil, 2025. Disponível em: https://brasil.un.org/pt-br/sdgs/8. Acesso em: 1 out. 2025.
+
+[^8]: NAÇÕES UNIDAS BRASIL. Objetivo 9: Indústria, Inovação e Infraestrutura. [S. l.]: Nações Unidas Brasil, 2025. Disponível em: https://brasil.un.org/pt-br/sdgs/9. Acesso em: 1 out. 2025.
