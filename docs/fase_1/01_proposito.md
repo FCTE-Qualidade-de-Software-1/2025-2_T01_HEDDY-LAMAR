@@ -152,6 +152,84 @@ Os critérios adotados para a escolha destas características foram:
 * **Impacto no Usuário Final:** Ambas as características têm um impacto direto e crítico na experiência do usuário. Uma falha de **funcionalidade** (ex: uma integração que não sincroniza corretamente) impede o usuário de realizar sua tarefa principal. Da mesma forma, uma falha de **portabilidade** (ex: a página de agendamento não renderiza em um navegador mobile) resulta em frustração e perda de oportunidades de negócio tanto para o usuário quanto para seus clientes.  
 * **Relevância para a Proposta de Valor do Cal.com:** A reputação do Cal.com como uma alternativa flexível, personalizável e poderosa a sistemas proprietários depende diretamente de sua rica **funcionalidade** e de sua adaptabilidade. A natureza *open source* do projeto reforça a importância da **portabilidade**, permitindo que a comunidade e as empresas o implantem em diversos ambientes, o que garante escalabilidade e controle total sobre a ferramenta. Falhas nessas áreas comprometeriam diretamente sua vantagem competitiva.
 
+# 6. **Escopo, Profundidade e Objetos de Avaliação**
+
+A definição do escopo, da profundidade e dos objetos de avaliação é uma etapa fundamental no processo de análise da qualidade do software **Cal.com**, conforme a **Fase 1 – Estabelecer Requisitos de Avaliação** apresentada em sala pela Profa. Cristiane Soares Ramos (2025). Essa etapa garante que a avaliação esteja alinhada aos objetivos do requisitante, considere os diferentes pontos de vista das partes interessadas e detalhe claramente os aspectos de qualidade a serem analisados.  
+
+## 6.1 Escopo da Avaliação  
+
+O escopo delimita **o que será avaliado e com qual ênfase** dentro do software. Para o Cal.com, o foco da avaliação será:  
+
+- **Características de Qualidade Selecionadas:** Funcionalidade e Portabilidade (priorizadas na matriz Impacto × Risco).  
+- **Domínio de Aplicação:** Software Comercial (Business Software), utilizado em ambientes corporativos e pessoais para otimização do agendamento de reuniões.  
+- **Modelo de Negócio:** COTS (Commercial Off-The-Shelf), disponível em modelo SaaS e self-hosted.  
+- **Ambiente de Uso:** Web browsers (Chrome, Firefox, Safari, Edge) e dispositivos móveis (Android e iOS), considerando integração com Google Calendar, Outlook, Zoom e Microsoft Teams.  
+
+Esse escopo foi definido para refletir diretamente o contexto de uso do Cal.com e atender aos interesses das partes interessadas, garantindo uma avaliação objetiva e aplicável.  
+
+## 6.2 Profundidade da Avaliação  
+
+A profundidade determina **o nível de detalhe e abrangência** da avaliação. No caso do Cal.com, foram considerados os seguintes aspectos:  
+
+- **Objetivos da Avaliação:**  
+  - Assegurar a conformidade com requisitos funcionais de agendamento e integração.  
+  - Validar a consistência do funcionamento em múltiplas plataformas (portabilidade).  
+  - Indicar pontos de melhoria para orientar a evolução do produto.  
+  - Oferecer subsídios para decisões de compra e adoção da solução em empresas.  
+
+- **Requisitos de Qualidade Avaliados:**  
+  - **Funcionalidade:** Ênfase 5 (grande interesse).  
+  - **Portabilidade:** Ênfase 4 (largo interesse).  
+  - Outras características como usabilidade, confiabilidade e segurança foram consideradas, mas sem prioridade nesta análise (ênfase ≤ 3).  
+
+Assim, a avaliação será conduzida com profundidade alta nas duas características prioritárias, assegurando que eventuais falhas nessas áreas sejam identificadas e mitigadas.  
+
+### Tabela de Ênfase das Características de Qualidade  
+
+| Característica   | Ênfase (1–5) |
+|------------------|--------------|
+| Funcionalidade   | 5 – Grande interesse |
+| Portabilidade    | 4 – Largo interesse |
+| Usabilidade      | 3 – Médio interesse |
+| Confiabilidade   | 3 – Médio interesse |
+| Segurança        | 3 – Médio interesse |
+| Eficiência       | 2 – Baixo interesse |
+| Manutenibilidade | 2 – Baixo interesse |
+| Completitude     | 2 – Baixo interesse |
+
+---
+
+## 6.3 Objetos de Avaliação  
+
+Os objetos da avaliação definem **as partes concretas do software** que serão analisadas. Para o Cal.com, foram considerados:  
+
+- **Nome do Produto:** Cal.com  
+- **Versão Avaliada:** v3.16.2 (release estável em setembro de 2025)  
+- **Componentes Avaliados:**  
+  - **Módulo de agendamento:** criação e gerenciamento de reuniões.  
+  - **Integrações externas:** Google Calendar, Outlook, Zoom e Microsoft Teams.  
+  - **Interface Web Responsiva:** acesso por navegadores em desktops e dispositivos móveis.  
+  - **Implantação Self-Hosted:** análise da facilidade de instalação e compatibilidade em diferentes servidores.  
+- **Usuários-alvo da Avaliação:**  
+  - Profissionais autônomos e equipes corporativas (usuários finais).  
+  - Gestores e compradores (decisores de aquisição).  
+  - Comunidade open source (desenvolvedores e mantenedores).  
+
+A definição clara dos objetos assegura que a avaliação será direcionada, consistente e reproduzível, evitando ambiguidades sobre o que foi ou não avaliado.  
+
+---
+
+## 6.4 Justificativa  
+
+A delimitação do **escopo, profundidade e objetos de avaliação** garante que o processo seja conduzido de forma sistemática, atendendo às expectativas do requisitante e alinhando-se às práticas recomendadas pela **ISO/IEC 25010** e pelos referenciais teóricos apresentados em sala (Ramos, 2025).  
+
+Assim, o Cal.com será avaliado de acordo com:  
+
+- **Escopo**: funcionalidades essenciais e compatibilidade multiplataforma.  
+- **Profundidade**: ênfase nas características prioritárias (funcionalidade e portabilidade).  
+- **Objetos**: módulos centrais de agendamento, integrações externas, interfaces web e ambientes de implantação.  
+
+Esse alinhamento entre teoria e prática fortalece a credibilidade da avaliação e garante que os resultados obtidos possam ser aplicados tanto em decisões técnicas quanto estratégicas.  
 
 ## Histórico de Versões
 
@@ -161,6 +239,7 @@ Os critérios adotados para a escolha destas características foram:
 | `1.1`  | 30/09/2025 | Criação da seção "Seleção e priorização de características" | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.2`  | 30/09/2025 | Criação da seção "Modelo de Qualidade" | [Vinicius Alves](https://github.com/vinialves2020) |
 | `1.3`  | 30/09/2025 | Criação da seção "Requisitante e Partes Interessadas" | [Cairo Florenço](https://github.com/CA1RO) |
+| `1.4`  | 01/10/2025 | Criação da seção "Escopo, Profundidade e Objetos de Avaliação" | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 
 ---
 
