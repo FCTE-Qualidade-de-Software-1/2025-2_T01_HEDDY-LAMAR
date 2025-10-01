@@ -103,3 +103,9 @@ A avaliação do **Cal.com** dentro da disciplina de Qualidade de Software consi
 - Conta com contêineres Docker para facilitar a instalação e execução em ambientes variados.  
 
 ---
+
+## ✏️ Histórico de versões
+
+|Versão|Data|Descrição|Autor|Revisor|
+|:----:|----|---------|-----|:-------:|
+|`1.0`|29/09/2025|Criação do README|[Antonio Carvalho](https://github.com/antonioscarvalho)|[Cairo Florenço](https://github.com/CA1RO)|
