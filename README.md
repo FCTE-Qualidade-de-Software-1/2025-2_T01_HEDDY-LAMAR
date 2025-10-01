@@ -79,11 +79,9 @@ Seu objetivo é fornecer uma alternativa de código aberto a ferramentas proprie
 
 Durante a avaliação do **Cal.com**, utilizamos as seguintes ferramentas:  
 
-- **Versionamento e Repositório:** GitHub  
+- **Versionamento e Repositório:** Git e GitHub  
 - **Documentação:** MkDocs Material + GitHub Pages  
-- **Design e Prototipação:** Figma, Canva  
-- **Comunicação e Reuniões:** WhatsApp, Teams  
-- **Gravação de Reuniões:** Teams  
+- **Comunicação e Reuniões:** WhatsApp e Teams  
 - **Editor de Código:** Visual Studio Code  
 
 ---
@@ -109,3 +107,4 @@ A avaliação do **Cal.com** dentro da disciplina de Qualidade de Software consi
 |Versão|Data|Descrição|Autor|Revisor|
 |:----:|----|---------|-----|:-------:|
 |`1.0`|29/09/2025|Criação do README|[Antonio Carvalho](https://github.com/antonioscarvalho)|[Cairo Florenço](https://github.com/CA1RO)|
+|`1.1`|29/09/2025|Edição e remoção de tópicos incongruentes|[Pedro Braga](https://github.com/Stain19)|[Cairo Florenço](https://github.com/CA1RO)|

@@ -284,7 +284,7 @@ Desse modo, a autoria e a responsabilidade integral pelo conteúdo final, inclui
 
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
-| `1.0`  | 30/09/2025 | Criação da estrutura inicial da página e inclusão do texto e referências bibliográficas | [Pedro Braga](https://github.com/Stain19) |
+| `1.0`  | 30/09/2025 | Criação da estrutura inicial da página, inclusão do texto do topico 1, revisão de conteúdo gerado via IA e adição de referência bibliográfica | [Pedro Braga](https://github.com/Stain19) |
 | `1.1`  | 30/09/2025 | Criação da seção "Seleção e priorização de características" | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.2`  | 30/09/2025 | Criação da seção "Modelo de Qualidade" | [Vinicius Alves](https://github.com/vinialves2020) |
 | `1.3`  | 30/09/2025 | Criação da seção "Requisitante e Partes Interessadas" | [Cairo Florenço](https://github.com/CA1RO) |

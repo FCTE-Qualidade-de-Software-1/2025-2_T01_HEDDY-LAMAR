@@ -77,9 +77,8 @@ Seu objetivo é fornecer uma alternativa de código aberto a ferramentas proprie
 
 Durante a avaliação do **Cal.com**, utilizamos as seguintes ferramentas:  
 
-- **Versionamento e Repositório:** GitHub  
+- **Versionamento e Repositório:** Git e GitHub  
 - **Documentação:** MkDocs Material + GitHub Pages  
-- **Design e Prototipação:** Figma e Canva  
 - **Comunicação e Reuniões:** WhatsApp e Teams  
 - **Editor de Código:** Visual Studio Code  
 
