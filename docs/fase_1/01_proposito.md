@@ -1,4 +1,4 @@
-# 1. Propósito da Avaliação
+# 1. **Propósito da Avaliação**
 
 O propósito desta avaliação é analisar a qualidade do software `cal.com` sob as perspectivas de Portabilidade e Adequação Funcional. A avaliação busca fornecer uma visão abrangente da qualidade do produto, identificando pontos fortes e fracos do sistema nessas áreas, com base na norma ISO/IEC 25010[^2].
 
@@ -13,7 +13,7 @@ Os resultados obtidos servirão para os seguintes propósitos[^1]:
 
 ---
 
-# 2. Tipo de Produto e Descrição do Software
+# 2. **Tipo de Produto e Descrição do Software**
 
 O Cal.com é uma plataforma web de agendamento de reuniões, que tem como premissa centralizar todas as informações em soluções de calendários em um só lugar.
 
@@ -33,7 +33,7 @@ A plataforma ao otimizar e automatizar o processo de agendamento de reuniões, u
 
 ---
 
-# 3. Seleção e priorização de características
+# 3. **Seleção e priorização de características**
 
 No presente trabalho, foram avaliadas diferentes características de qualidade da norma **SQUARE** com o objetivo de selecionar e priorizar aquelas mais relevantes para análise do software **cal.com**.  
 
@@ -95,8 +95,24 @@ A análise pela matriz Impacto × Risco justifica a seleção de **adequação f
 
 ---
 
-prox seção
+# **4.Modelo de Qualidade**
 
+As características de qualidade de software escolhidas para esta avaliação do **Cal.com**, com base na norma ISO/IEC 25010 (SQuaRE), são: **Funcionalidade** e **Portabilidade**.
+
+## **Funcionalidade**
+
+**Motivação:** Garantir que o software execute todas as suas funções essenciais de agendamento, integração e automação de forma correta e completa. A produtividade do usuário e a eficiência de seus processos de negócio dependem diretamente da capacidade do Cal.com de criar eventos, sincronizar com calendários externos (Google Calendar, Outlook), integrar-se a ferramentas de videoconferência (Zoom, Teams) e executar automações via APIs e webhooks sem falhas. A confiança no sistema é construída sobre a premissa de que cada recurso prometido funcionará como esperado.
+
+## **Portabilidade**
+
+**Motivação:** Possibilitar que a plataforma de agendamento seja acessada e utilizada em uma ampla gama de dispositivos, navegadores e ambientes operacionais. Tanto os usuários que gerenciam suas agendas quanto seus clientes que marcam horários acessam a plataforma a partir de desktops, tablets e celulares. A portabilidade garante uma experiência consistente e funcional em todos esses pontos de acesso, evitando a perda de agendamentos por incompatibilidade tecnológica. Além disso, por ser uma solução de código aberto, a capacidade de ser implantada (self-hosted) em diferentes infraestruturas de servidor é um aspecto crucial da portabilidade do sistema.
+
+### **Critérios de Priorização**
+
+Os critérios adotados para a escolha destas características foram:
+
+* **Impacto no Usuário Final:** Ambas as características têm um impacto direto e crítico na experiência do usuário. Uma falha de **funcionalidade** (ex: uma integração que não sincroniza corretamente) impede o usuário de realizar sua tarefa principal. Da mesma forma, uma falha de **portabilidade** (ex: a página de agendamento não renderiza em um navegador mobile) resulta em frustração e perda de oportunidades de negócio tanto para o usuário quanto para seus clientes.  
+* **Relevância para a Proposta de Valor do Cal.com:** A reputação do Cal.com como uma alternativa flexível, personalizável e poderosa a sistemas proprietários depende diretamente de sua rica **funcionalidade** e de sua adaptabilidade. A natureza *open source* do projeto reforça a importância da **portabilidade**, permitindo que a comunidade e as empresas o implantem em diversos ambientes, o que garante escalabilidade e controle total sobre a ferramenta. Falhas nessas áreas comprometeriam diretamente sua vantagem competitiva.
 
 
 ## Histórico de Versões
@@ -105,6 +121,7 @@ prox seção
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
 | `1.0`  | 30/09/2025 | Criação da estrutura inicial da página e inclusão do texto e referências bibliográficas | [Pedro Braga](https://github.com/Stain19) |
 | `1.1`  | 30/09/2025 | Criação da seção "Seleção e priorização de características" | [Gustavo Haubert](https://github.com/GustavoHaubert) |
+| `1.2`  | 30/09/2025 | Criação da seção "Modelo de Qualidade" | [Vinicius Alves](https://github.com/vinialves2020) |
 
 ---
 
