@@ -1,8 +1,10 @@
-# 1. **Propósito da Avaliação**
+# Requisitos de avaliação
+
+## 1. **Propósito da Avaliação**
 
 O propósito desta avaliação é analisar a qualidade do software `cal.com` sob as perspectivas de Portabilidade e Adequação Funcional. A avaliação busca fornecer uma visão abrangente da qualidade do produto, identificando pontos fortes e fracos do sistema nessas áreas, com base na norma ISO/IEC 25010[^2].
 
-## 1.1. Uso Pretendido
+### 1.1. Uso Pretendido
 
 Os resultados obtidos servirão para os seguintes propósitos[^1]:
 
@@ -13,11 +15,11 @@ Os resultados obtidos servirão para os seguintes propósitos[^1]:
 
 ---
 
-# 2. **Requisitante e Partes Interessadas (Stakeholders)**
+## 2. **Requisitante e Partes Interessadas (Stakeholders)**
 
 Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as partes interessadas, seus papéis e como os resultados desta análise influenciam suas decisões e critérios de sucesso. 
 
-## 2.1. Usuários Finais
+### 2.1. Usuários Finais
 
 * Papel: São os indivíduos e equipes que utilizam o Cal.com no dia a dia para gerenciar suas agendas e marcar reuniões. Este grupo pode incluir desde profissionais autônomos e freelancers até equipes inteiras dentro de grandes empresas, além dos clientes e convidados que interagem com a plataforma para marcar um horário.
 
@@ -25,7 +27,7 @@ Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as parte
 
 * Critério de Sucesso: O sucesso é medido pela capacidade de agendar reuniões de forma eficiente e sem atritos. A avaliação confirma se a ferramenta possui as funcionalidades necessárias e se funciona de maneira consistente em qualquer dispositivo ou navegador que eles ou seus convidados utilizem, garantindo confiança e uma boa experiência de uso.
 
-## 2.2. Compradores e Gestores
+### 2.2. Compradores e Gestores
 
 * Papel: Representam as empresas ou equipes que estão considerando adquirir ou adotar o Cal.com como solução de agendamento padrão. Podem ser gestores de TI, chefes de departamento ou donos de pequenas empresas.
 
@@ -33,7 +35,7 @@ Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as parte
 
 * Critério de Sucesso: O sucesso é a adoção de uma ferramenta que resolva as necessidades da empresa com baixo custo de implementação e suporte. A avaliação valida se o Cal.com atende aos requisitos do negócio e se é compatível com o ambiente tecnológico da organização, garantindo o retorno sobre o investimento.
 
-## 2.3. Equipe de Desenvolvimento e Manutenção do Cal.com
+### 2.3. Equipe de Desenvolvimento e Manutenção do Cal.com
 
 * Papel: São os engenheiros, designers e gerentes de produto responsáveis por construir, manter e evoluir o software Cal.com.
 
@@ -41,7 +43,7 @@ Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as parte
 
 * Critério de Sucesso: O sucesso está em obter indicadores que auxiliem na construção de um produto estável, competitivo e com alta satisfação do usuário. Esta avaliação externa fornece um feedback acionável, apontando falhas e melhorias tanto nas funcionalidades (adequação funcional) quanto na consistência da experiência entre plataformas (portabilidade), orientando o desenvolvimento.
 
-## 2.4. Equipe de Marketing e Vendas
+### 2.4. Equipe de Marketing e Vendas
 
 * Papel: São os profissionais responsáveis por comunicar o valor do Cal.com ao mercado, atrair novos clientes e posicionar o produto frente a concorrentes como o Calendly.
 
@@ -51,17 +53,17 @@ Para auxiliar na avaliação de qualidade do Cal.com, vamos identificar as parte
 
 ---
 
-# 3. **Tipo de Produto e Descrição do Software**
+## 3. **Tipo de Produto e Descrição do Software**
 
 O Cal.com é uma plataforma web de agendamento de reuniões, que tem como premissa centralizar todas as informações em soluções de calendários em um só lugar.
 
 Para classificar essa plataforma, é possível utilizar duas óticas complementares: o modelo de negócio e o domínio de aplicação.
 
-## 3.2 Classificação por Modelo de Negócio: COTS (Commercial Off-The-Shelf)[^3]
+### 3.2 Classificação por Modelo de Negócio: COTS (Commercial Off-The-Shelf)[^3]
 
 O Cal.com se encaixa bem na categoria COTS, pois é um produto padronizado, oferecido como um modelo SaaS (Software as a Service) ou via auto-hospedagem (self-hosting) de seu código aberto[^4]. Todos os usuários utilizam a mesma base de código e funcionalidades, que são atualizadas de forma centralizada pelo desenvolvedor, se encaixando perfeitamente no modelo COTS.
 
-## 3.3 Classificação por Domínio de Aplicação: Software Comercial
+### 3.3 Classificação por Domínio de Aplicação: Software Comercial
 
 De acordo com a classificação de Pressman[^5], o Cal.com é um Software Comercial (Business Software), pois é um software desenvolvido com o objetivo dar suporte a operações comerciais e decisões administrativas, automatizando tarefas e processando informações de negócio.
 
@@ -71,11 +73,11 @@ A plataforma ao otimizar e automatizar o processo de agendamento de reuniões, u
 
 ---
 
-# 4. **Seleção e priorização de características**
+## 4. **Seleção e priorização de características**
 
 No presente trabalho, foram avaliadas diferentes características de qualidade da norma **SQUARE** com o objetivo de selecionar e priorizar aquelas mais relevantes para análise do software **cal.com**.  
 
-## 4.1 Seleção de características
+### 4.1 Seleção de características
 
 O *cal.com* é um sistema web para agendamento de reuniões que depende de integração com outros calendários e de acesso multiplataforma. Considerando esse contexto e o perfil dos usuários (corporativos e pessoais, com acesso via desktop e dispositivos móveis), foram inicialmente consideradas todas as características da norma SQUARE, por refletirem os fatores críticos de sucesso do software:
 
@@ -88,7 +90,7 @@ O *cal.com* é um sistema web para agendamento de reuniões que depende de integ
 - **Manutenibilidade** – facilidade de atualização, correção e evolução do sistema.  
 - **Portabilidade** – garantir uso adequado em diferentes dispositivos, sistemas operacionais e navegadores.  
 
-## 4.2 Método de priorização: Matriz Impacto × Risco
+### 4.2 Método de priorização: Matriz Impacto × Risco
 
 Para priorizar as características, utilizamos a **Matriz Impacto × Risco**, atribuindo valores de 1 (baixo) a 5 (alto) para cada dimensão:  
 
@@ -112,7 +114,7 @@ A pontuação final (I × R) permitiu ordenar as características por prioridade
 | Eficiência de desempenho  | 3       | 2     | 6  |
 | Manutenibilidade          | 2       | 2     | 4  |
 
-## 4.3 Justificativa da priorização
+### 4.3 Justificativa da priorização
 
 - **Adequação funcional** apresentou a maior prioridade (20 pontos). Isso ocorre porque o *cal.com* depende diretamente do correto funcionamento de suas funções principais — criação de reuniões, sincronização com calendários externos e envio de convites. Uma falha nessa característica comprometeria imediatamente a utilidade do software.  
 - **Portabilidade** ficou em segundo lugar (16 pontos), refletindo a necessidade de que o sistema seja acessível em diferentes dispositivos e navegadores, essencial para ampliar a base de usuários.  
@@ -121,7 +123,7 @@ A pontuação final (I × R) permitiu ordenar as características por prioridade
 
 Além disso, a análise considera que mudanças no contexto de uso poderiam alterar a priorização. Por exemplo, se o *cal.com* fosse implantado em empresas com políticas rígidas de segurança, a característica **Segurança** poderia receber maior impacto e risco, subindo na matriz e podendo se tornar prioritária.
 
-## 4.4 Trade-offs
+### 4.4 Trade-offs
 
 A priorização demonstra que a ênfase deve estar em **adequação funcional** e **portabilidade**. Isso implica que:
 
@@ -133,15 +135,15 @@ A análise pela matriz Impacto × Risco justifica a seleção de **adequação f
 
 ---
 
-# 5. **Modelo de Qualidade**
+## 5. **Modelo de Qualidade**
 
 As características de qualidade de software escolhidas para esta avaliação do **Cal.com**, com base na norma ISO/IEC 25010 (SQuaRE), são: **Funcionalidade** e **Portabilidade**.
 
-## **Funcionalidade**
+### **Funcionalidade**
 
 **Motivação:** Garantir que o software execute todas as suas funções essenciais de agendamento, integração e automação de forma correta e completa. A produtividade do usuário e a eficiência de seus processos de negócio dependem diretamente da capacidade do Cal.com de criar eventos, sincronizar com calendários externos (Google Calendar, Outlook), integrar-se a ferramentas de videoconferência (Zoom, Teams) e executar automações via APIs e webhooks sem falhas. A confiança no sistema é construída sobre a premissa de que cada recurso prometido funcionará como esperado.
 
-## **Portabilidade**
+### **Portabilidade**
 
 **Motivação:** Possibilitar que a plataforma de agendamento seja acessada e utilizada em uma ampla gama de dispositivos, navegadores e ambientes operacionais. Tanto os usuários que gerenciam suas agendas quanto seus clientes que marcam horários acessam a plataforma a partir de desktops, tablets e celulares. A portabilidade garante uma experiência consistente e funcional em todos esses pontos de acesso, evitando a perda de agendamentos por incompatibilidade tecnológica. Além disso, por ser uma solução de código aberto, a capacidade de ser implantada (self-hosted) em diferentes infraestruturas de servidor é um aspecto crucial da portabilidade do sistema.
 
@@ -152,11 +154,11 @@ Os critérios adotados para a escolha destas características foram:
 * **Impacto no Usuário Final:** Ambas as características têm um impacto direto e crítico na experiência do usuário. Uma falha de **funcionalidade** (ex: uma integração que não sincroniza corretamente) impede o usuário de realizar sua tarefa principal. Da mesma forma, uma falha de **portabilidade** (ex: a página de agendamento não renderiza em um navegador mobile) resulta em frustração e perda de oportunidades de negócio tanto para o usuário quanto para seus clientes.  
 * **Relevância para a Proposta de Valor do Cal.com:** A reputação do Cal.com como uma alternativa flexível, personalizável e poderosa a sistemas proprietários depende diretamente de sua rica **funcionalidade** e de sua adaptabilidade. A natureza *open source* do projeto reforça a importância da **portabilidade**, permitindo que a comunidade e as empresas o implantem em diversos ambientes, o que garante escalabilidade e controle total sobre a ferramenta. Falhas nessas áreas comprometeriam diretamente sua vantagem competitiva.
 
-# 6. **Escopo, Profundidade e Objetos de Avaliação**
+## 6. **Escopo, Profundidade e Objetos de Avaliação**
 
 A definição do escopo, da profundidade e dos objetos de avaliação é uma etapa fundamental no processo de análise da qualidade do software **Cal.com**, conforme a **Fase 1 – Estabelecer Requisitos de Avaliação** apresentada em sala pela Profa. Cristiane Soares Ramos (2025). Essa etapa garante que a avaliação esteja alinhada aos objetivos do requisitante, considere os diferentes pontos de vista das partes interessadas e detalhe claramente os aspectos de qualidade a serem analisados.  
 
-## 6.1 Escopo da Avaliação  
+### 6.1 Escopo da Avaliação  
 
 O escopo delimita **o que será avaliado e com qual ênfase** dentro do software. Para o Cal.com, o foco da avaliação será:  
 
@@ -167,7 +169,7 @@ O escopo delimita **o que será avaliado e com qual ênfase** dentro do software
 
 Esse escopo foi definido para refletir diretamente o contexto de uso do Cal.com e atender aos interesses das partes interessadas, garantindo uma avaliação objetiva e aplicável.  
 
-## 6.2 Profundidade da Avaliação  
+### 6.2 Profundidade da Avaliação  
 
 A profundidade determina **o nível de detalhe e abrangência** da avaliação. No caso do Cal.com, foram considerados os seguintes aspectos:  
 
@@ -199,7 +201,7 @@ Assim, a avaliação será conduzida com profundidade alta nas duas característ
 
 ---
 
-## 6.3 Objetos de Avaliação  
+### 6.3 Objetos de Avaliação  
 
 Os objetos da avaliação definem **as partes concretas do software** que serão analisadas. Para o Cal.com, foram considerados:  
 
@@ -219,7 +221,7 @@ A definição clara dos objetos assegura que a avaliação será direcionada, co
 
 ---
 
-## 6.4 Justificativa  
+### 6.4 Justificativa  
 
 A delimitação do **escopo, profundidade e objetos de avaliação** garante que o processo seja conduzido de forma sistemática, atendendo às expectativas do requisitante e alinhando-se às práticas recomendadas pela **ISO/IEC 25010** e pelos referenciais teóricos apresentados em sala (Ramos, 2025).  
 
