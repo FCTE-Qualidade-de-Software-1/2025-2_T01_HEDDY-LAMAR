@@ -32,6 +32,7 @@ nav:
   - "Fase 02": fase_2/index.md
   - "Fase 03": fase_3/index.md
   - "Fase 04": fase_4/index.md
+  - "Contribuções": contribuicao/fase_1.md
 
 plugins:
   - minify
