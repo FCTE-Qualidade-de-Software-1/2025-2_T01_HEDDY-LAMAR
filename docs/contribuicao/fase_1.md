@@ -8,7 +8,7 @@
 |  | [Artyson Souto](https://github.com/Atyrson)                                  |                   |             |
 |  | [Cairo Florenço](https://github.com/CA1RO)                                   |                       |             |
 |  | [Pedro Henrique](https://github.com/Stain19)                                 |                |             |
-|  | [Gustavo Haubert](https://github.com/GustavoHaubert)                         |  |             |
+| 222024793 | [Gustavo Haubert](https://github.com/GustavoHaubert)                         | Criação da seção "Seleção e priorização de características", participação no debate sobre a escolha do software e características de qualidade |             |
 |  | [Vinícius Livramento](https://github.com/vinialves2020)                      |   |             |
 
 **Total:** 100%
