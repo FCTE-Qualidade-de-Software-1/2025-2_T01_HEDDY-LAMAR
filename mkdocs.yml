@@ -29,6 +29,7 @@ theme:
 nav:
   - Home: index.md
   - "Fase 01 - Requisitos de avaliação": fase_1/index.md
+  - "Fase 02": fase_2/index.md
 
 plugins:
   - minify
