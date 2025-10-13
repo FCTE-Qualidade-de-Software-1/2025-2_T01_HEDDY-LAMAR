@@ -76,8 +76,7 @@ Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, 
 | `1.0`  | 12/10/2025 | Criação da estrutura inicial da página e criação das questões e métricas da adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.1`  | 12/10/2025 | Criação das questões e métricas de portabilidade | [Atyrson Souto](https://github.com/Atyrson) |
 | `1.2`  | 12/10/2025 | Criação dos Objetivos | [Vinicius Alves](https://github.com/vinialves2020) |
-| `1.3`  | 12/10/2025 | Adicionando topico sobre a metodologia | [Cairo Florenço](https://github.com/CA1RO) |
----
+| `1.3`  | 12/10/2025 | Adicionando tópico sobre a metodologia | [Cairo Florenço](https://github.com/CA1RO) |
 
 ## Referências
 
