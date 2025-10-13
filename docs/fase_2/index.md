@@ -1,4 +1,17 @@
 # Fase 02
+## Objetivo Geral
+
+Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, considerando as características Adequação Funcional e Portabilidade, conforme o modelo de qualidade ISO/IEC 25010. O propósito é verificar se o sistema atende corretamente às necessidades funcionais dos usuários e se apresenta facilidade de instalação, execução e adaptação em diferentes ambientes.
+
+### Objetivos Específicos
+
+1. Verificar se as funcionalidades implementadas no Cal.com atendem aos requisitos funcionais esperados pelos usuários e administradores.
+
+2. Avaliar o comportamento e a completude das funcionalidades principais do sistema (criação de eventos, integração com calendários, envio de notificações).
+
+3. Analisar a capacidade de portabilidade do sistema, considerando sua adaptabilidade a diferentes sistemas operacionais, navegadores e ambientes de execução.
+
+4. Medir o esforço necessário para instalar e configurar o Cal.com em diferentes contextos e identificar dependências que impactem sua portabilidade.
 
 ## Questões (Questions)
 
@@ -45,6 +58,7 @@
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
 | `1.0`  | 12/10/2025 | Criação da estrutura inicial da página e criação das questões e métricas da adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.1`  | 12/10/2025 | Criação das questões e métricas de portabilidade | [Atyrson Souto](https://github.com/Atyrson) |
+| `1.2`  | 12/10/2025 | Criação dos Objetivos | [Vinicius Alves](https://github.com/vinialves2020) |
 ---
 
 ## Referências
