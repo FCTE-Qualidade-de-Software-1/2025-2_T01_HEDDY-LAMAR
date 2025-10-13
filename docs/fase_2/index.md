@@ -30,6 +30,16 @@ Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, 
 
 4. Medir o esforço necessário para instalar e configurar o Cal.com em diferentes contextos e identificar dependências que impactem sua portabilidade.
 
+## Escopo da Avaliação
+
+| **Elemento** | **Descrição** |
+| :------------ | :------------- |
+| **O que será avaliado** | O sistema **Cal.com** (versão open source estável disponível no GitHub até outubro de 2025), com foco nos módulos de **agendamento de eventos**, **integração com calendários externos** (Google Calendar, Outlook) e **envio de notificações**. |
+| **O que não será avaliado** | Aspectos relacionados à **segurança da informação**, **desempenho do sistema** e **usabilidade da interface**, que serão abordados em etapas futuras do projeto. |
+| **Ambiente de teste e condições** | Testes realizados em ambiente controlado, com os seguintes parâmetros:<br>• **Sistemas Operacionais:** Ubuntu 22.04, Windows 11 e macOS Sonoma<br>• **Navegadores:** Google Chrome, Mozilla Firefox e Safari<br>• **Dispositivos:** Desktop e notebook<br>• **Conexão:** Internet banda larga estável |
+| **Responsáveis e papéis** | • **Equipe de Avaliação:** autores do projeto (Gustavo Haubert, Atyrson Souto, Vinicius Alves e Cairo Florenço)<br>• **Orientação e supervisão:** Profa. **Cristiane Soares Ramos**<br>• **Responsáveis pela coleta e interpretação de métricas:** Equipe de desenvolvimento e avaliadores de qualidade |
+
+
 ## Questões (Questions)
 
 ### Adequação Funcional
@@ -77,6 +87,7 @@ Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, 
 | `1.1`  | 12/10/2025 | Criação das questões e métricas de portabilidade | [Atyrson Souto](https://github.com/Atyrson) |
 | `1.2`  | 12/10/2025 | Criação dos Objetivos | [Vinicius Alves](https://github.com/vinialves2020) |
 | `1.3`  | 12/10/2025 | Adicionando tópico sobre a metodologia | [Cairo Florenço](https://github.com/CA1RO) |
+| `1.4`  | 12/10/2025 | Adicionando tabela de escopo | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 
 ## Referências
 
