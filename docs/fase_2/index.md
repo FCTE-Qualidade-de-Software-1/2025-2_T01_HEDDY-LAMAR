@@ -2,7 +2,7 @@
 
 ## Metodologia **GQM (Goal Question Metric)**
 
-Para a realização da etapa de especificação da avaliação utilizaremos a metodologia GQM.++
+Para a realização da etapa de especificação da avaliação utilizaremos a metodologia GQM.
 
 > GQM é uma abordagem de cima para baixo (top-down) para estabelecer um sistema de medição direcionado a metas para o desenvolvimento de software, em que a equipe começa com metas organizacionais, define a medição das metas, levanta questões a abordar os objetivos e identifica as métricas que proporcionem respostas às perguntas.
 >
