@@ -1,5 +1,22 @@
-# Fase 02
-## Objetivo Geral
+# Especificação da Avaliação
+
+## Metodologia **GQM (Goal Question Metric)**
+
+Para a realização da etapa de especificação da avaliação utilizaremos a metodologia GQM.++
+
+> GQM é uma abordagem de cima para baixo (top-down) para estabelecer um sistema de medição direcionado a metas para o desenvolvimento de software, em que a equipe começa com metas organizacionais, define a medição das metas, levanta questões a abordar os objetivos e identifica as métricas que proporcionem respostas às perguntas.
+>
+> (SILVA et al., 2009, p. 4)
+
+<div align="center">
+  <strong>Figura 1 – Definição das Métricas GQM</strong>
+  <br>
+  <img src="../assets/gqm_diagrama.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
+  <br>
+  <em>Fonte: Silva et al. (2009, p. 4).</em>
+</div>
+
+## Objetivo Geral (Goal)
 
 Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, considerando as características Adequação Funcional e Portabilidade, conforme o modelo de qualidade ISO/IEC 25010. O propósito é verificar se o sistema atende corretamente às necessidades funcionais dos usuários e se apresenta facilidade de instalação, execução e adaptação em diferentes ambientes.
 
@@ -59,6 +76,9 @@ Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, 
 | `1.0`  | 12/10/2025 | Criação da estrutura inicial da página e criação das questões e métricas da adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.1`  | 12/10/2025 | Criação das questões e métricas de portabilidade | [Atyrson Souto](https://github.com/Atyrson) |
 | `1.2`  | 12/10/2025 | Criação dos Objetivos | [Vinicius Alves](https://github.com/vinialves2020) |
+| `1.3`  | 12/10/2025 | Adicionando topico sobre a metodologia | [Cairo Florenço](https://github.com/CA1RO) |
 ---
 
 ## Referências
+
+SILVA, Carlos Vinícius Pereira da; MOURA, Déborah Carvalho de; CAMPOS, Danylo de Castro; NERY, Paulo. GQM: Goal - Question - Metric. 2009.

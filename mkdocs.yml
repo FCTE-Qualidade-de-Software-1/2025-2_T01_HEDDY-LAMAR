@@ -28,8 +28,8 @@ theme:
 
 nav:
   - Home: index.md
-  - "Fase 01 - Requisitos de avaliação": fase_1/index.md
-  - "Fase 02": fase_2/index.md
+  - "Fase 01 - Requisitos de Avaliação": fase_1/index.md
+  - "Fase 02 - Especificação da Avaliação": fase_2/index.md
 
 plugins:
   - minify
