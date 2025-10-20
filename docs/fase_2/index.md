@@ -16,19 +16,9 @@ Para a realização da etapa de especificação da avaliação utilizaremos a me
   <em>Fonte: Silva et al. (2009, p. 4).</em>
 </div>
 
-## Objetivo Geral (Goal)
+## Objetivo (Goal)
 
-Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, considerando as características Adequação Funcional e Portabilidade, conforme o modelo de qualidade ISO/IEC 25010. O propósito é verificar se o sistema atende corretamente às necessidades funcionais dos usuários e se apresenta facilidade de instalação, execução e adaptação em diferentes ambientes.
-
-### Objetivos Específicos
-
-1. Verificar se as funcionalidades implementadas no Cal.com atendem aos requisitos funcionais esperados pelos usuários e administradores.
-
-2. Avaliar o comportamento e a completude das funcionalidades principais do sistema (criação de eventos, integração com calendários, envio de notificações).
-
-3. Analisar a capacidade de portabilidade do sistema, considerando sua adaptabilidade a diferentes sistemas operacionais, navegadores e ambientes de execução.
-
-4. Medir o esforço necessário para instalar e configurar o Cal.com em diferentes contextos e identificar dependências que impactem sua portabilidade.
+Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respeito às características Adequação Funcional e Portabilidade, do ponto de vista dos usuários, no contexto do modelo de qualidade ISO/IEC 25010.
 
 ## Escopo da Avaliação
 
@@ -37,7 +27,7 @@ Avaliar a qualidade do software Cal.com, um sistema open source de agendamento, 
 | **O que será avaliado** | O sistema **Cal.com** (versão open source estável disponível no GitHub até outubro de 2025), com foco nos módulos de **agendamento de eventos**, **integração com calendários externos** (Google Calendar, Outlook) e **envio de notificações**. |
 | **O que não será avaliado** | Aspectos relacionados à **segurança da informação**, **desempenho do sistema** e **usabilidade da interface**, que serão abordados em etapas futuras do projeto. |
 | **Ambiente de teste e condições** | Testes realizados em ambiente controlado, com os seguintes parâmetros:<br>• **Sistemas Operacionais:** Ubuntu 22.04, Windows 11 e macOS Sonoma<br>• **Navegadores:** Google Chrome, Mozilla Firefox e Safari<br>• **Dispositivos:** Desktop e notebook<br>• **Conexão:** Internet banda larga estável |
-| **Responsáveis e papéis** | • **Equipe de Avaliação:** autores do projeto (Antonio Carvalho, Gustavo Haubert, Atyrson Souto, Vinicius Alves e Cairo Florenço)<br>• **Orientação e supervisão:** Profa. **Cristiane Soares Ramos**<br>• **Responsáveis pela coleta e interpretação de métricas:** Equipe de desenvolvimento e avaliadores de qualidade |
+| **Responsáveis e papéis** | • **Equipe de Avaliação:** autores do projeto (Antonio Carvalho, Gustavo Haubert, Atyrson Souto, Vinicius Alves, Cairo Florenço e Pedro Henrique Braga de Morais)<br>• **Orientação e supervisão:** Profa. **Cristiane Soares Ramos**<br>• **Responsáveis pela coleta e interpretação de métricas:** Equipe de desenvolvimento e avaliadores de qualidade |
 
 
 ## Questões (Questions)
