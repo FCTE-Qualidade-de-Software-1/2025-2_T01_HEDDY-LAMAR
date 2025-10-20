@@ -29,22 +29,31 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 | **Ambiente de teste e condições** | Testes realizados em ambiente controlado, com os seguintes parâmetros:<br>• **Sistemas Operacionais:** Ubuntu 22.04, Windows 11 e macOS Sonoma<br>• **Navegadores:** Google Chrome, Mozilla Firefox e Safari<br>• **Dispositivos:** Desktop e notebook<br>• **Conexão:** Internet banda larga estável |
 | **Responsáveis e papéis** | • **Equipe de Avaliação:** autores do projeto (Antonio Carvalho, Gustavo Haubert, Atyrson Souto, Vinicius Alves, Cairo Florenço e Pedro Henrique Braga de Morais)<br>• **Orientação e supervisão:** Profa. **Cristiane Soares Ramos**<br>• **Responsáveis pela coleta e interpretação de métricas:** Equipe de desenvolvimento e avaliadores de qualidade |
 
-
 ## Questões (Questions)
 
 ### Adequação Funcional
 
-1. As funcionalidades principais do sistema (agendamento, notificação e integração com Google Calendar, Outlook, etc.) estão implementadas conforme os requisitos esperados?  
-2. As funcionalidades executam suas tarefas corretamente, sem falhas perceptíveis pelo usuário?  
-3. Existem funcionalidades redundantes ou ausentes que prejudiquem a experiência do usuário?  
-4. O comportamento do sistema é consistente em diferentes cenários de uso?
+1. As funcionalidades principais do sistema (agendamento, notificação e integração com Google Calendar, Outlook, etc.) estão implementadas conforme os requisitos esperados?
+    - **Hipótese:** Acredita-se que o Cal.com implementa a maioria das funcionalidades essenciais para um sistema de agendamento, atendendo aos requisitos esperados para um produto de sua categoria.
+2. As funcionalidades executam suas tarefas corretamente, sem falhas perceptíveis pelo usuário?
+    - **Hipótese:** Espera-se que as funcionalidades principais operem corretamente na maioria dos cenários, embora possam existir falhas menores que não comprometam a experiência do usuário de forma crítica.
+3. Existem funcionalidades redundantes ou ausentes?
+    - **Hipótese:** A hipótese é de que o sistema possui as funcionalidades adequadas para seu propósito, sem redundâncias significativas. No entanto, podem ser identificadas oportunidades de melhoria ou a ausência de funcionalidades secundárias.
+4. A ausência ou redundância impacta negativamente o uso do sistema?
+    - **Hipótese:** Supõe-se que a ausência de funcionalidades secundárias pode impactar a experiência de usuários avançados, mas não deve prejudicar o fluxo principal de agendamento para o usuário comum.
+5. O comportamento do sistema é consistente em diferentes cenários de uso?
+    - **Hipótese:** Espera-se que o sistema mantenha um comportamento consistente, garantindo que as ações do usuário resultem em respostas previsíveis e uniformes na maioria dos cenários de uso.
 
 ### Portabilidade
 
-1.  O sistema pode ser instalado e executado em diferentes sistemas operacionais (Linux, macOS, Windows)?
-2.  O Cal.com apresenta o mesmo comportamento em diferentes navegadores e dispositivos móveis?
-3.  O processo de instalação e configuração é simples e bem documentado?
-4.  Existem dependências externas que dificultam a implantação do sistema em novos ambientes?
+1. O processo de *self-hosting* (auto-hospedagem) do Cal.com é bem documentado e pode ser executado com sucesso em diferentes ambientes de servidor (ex: Docker, Vercel, provedores de nuvem)?
+    - **Hipótese:** Acredita-se que a documentação oficial fornece um guia claro para a implantação, permitindo que usuários com conhecimento técnico moderado realizem o *self-hosting* com sucesso.
+2. A aplicação web do Cal.com mantém sua funcionalidade e aparência consistentes quando acessada a partir de diferentes navegadores (Chrome, Firefox, Safari)?
+    - **Hipótese:** Espera-se que a aplicação seja totalmente funcional e consistente nos principais navegadores, com possíveis variações visuais mínimas que não afetem a usabilidade.
+3. O esforço necessário para configurar e implantar uma instância própria do Cal.com é considerado baixo?
+    - **Hipótese:** A hipótese é de que o esforço de implantação é baixo para ambientes baseados em Docker, mas pode ser moderado em configurações de servidor mais tradicionais que exigem gerenciamento manual de dependências.
+4. As dependências de infraestrutura (banco de dados, variáveis de ambiente, etc.) necessárias para a implantação estão claramente especificadas e são de fácil gerenciamento?
+    - **Hipótese:** Supõe-se que as dependências críticas estão bem documentadas, mas a configuração de serviços externos (como provedores de e-mail) pode exigir um esforço adicional.
 
 
 ## Métricas (Metrics)
@@ -79,6 +88,7 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 | `1.3`  | 12/10/2025 | Adicionando tópico sobre a metodologia | [Cairo Florenço](https://github.com/CA1RO) |
 | `1.4`  | 12/10/2025 | Adicionando tabela de escopo | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 | `1.5` | 20/10/2025 | Reformula o Objetivo da avaliação de acordo com a GQM após feedback da professora | [Pedro Braga](https://github.com/Stain19) |
+| `1.6` | 20/10/2025 | Adiciona hipóteses para cada pergunta de adequação funcional e portabilidade, além de reformular as perguntas de portabilidade | [Pedro Braga](https://github.com/Stain19) |
 
 ## Referências
 
