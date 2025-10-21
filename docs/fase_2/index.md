@@ -74,8 +74,9 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 |------------|-------------|----------|---------------|
 | **M5** | Taxa de sucesso de instalação em múltiplos ambientes | Quantitativa | (Nº de instalações bem-sucedidas ÷ Nº total de tentativas) × 100 |
 | **M6** | Tempo médio de implantação | Quantitativa | Tempo em minutos/horas para instalar e configurar o sistema |
-| **M7** | Número de incompatibilidades identificadas entre plataformas | Quantitativa | Quantidade de falhas registradas em diferentes SOs ou navegadores |
-| **M8** | Grau de dependência tecnológica | Qualitativa | Classificação (baixa, média ou alta) com base na análise das dependências externas |
+| **M7** | Número de incompatibilidades (Funcionais e Visuais) | Quantitativa | Contagem de falhas funcionais ou quebras de layout significativas registradas em diferentes SOs ou navegadores. |
+| **M8** | Qualidade Percebida da Documentação | Qualitativa | Avaliação (escala 1-5) atribuída pela equipe sobre a clareza, completude e precisão da documentação de self-hosting e configuração de dependências. |
+| **M9** | Percepção de Esforço de Implantação | Qualitativa | Avaliação (escala 1-5) do esforço (cognitivo e técnico) percebido pela equipe para concluir a instalação, mesmo seguindo a documentação. |
 
 
 ## Histórico de Versões
@@ -89,6 +90,7 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 | `1.4`  | 12/10/2025 | Adicionando tabela de escopo | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 | `1.5` | 20/10/2025 | Reformula o Objetivo da avaliação de acordo com a GQM após feedback da professora | [Pedro Braga](https://github.com/Stain19) |
 | `1.6` | 20/10/2025 | Adiciona hipóteses para cada pergunta de adequação funcional e portabilidade, além de reformular as perguntas de portabilidade | [Pedro Braga](https://github.com/Stain19) |
+| `1.7` | 21/10/2025 | Refina as métricas de portabilidade, desmembrando a métrica M8 para melhor adequação às questões | [Atyrson Souto](https://github.com/Atyrson) |
 
 ## Referências
 
