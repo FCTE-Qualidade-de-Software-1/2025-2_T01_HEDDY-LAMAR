@@ -33,15 +33,15 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 
 ### Adequação Funcional
 
-1. As funcionalidades principais do sistema (agendamento, notificação e integração com Google Calendar, Outlook, etc.) estão implementadas conforme os requisitos esperados?
+1. As funcionalidades principais do sistema (agendamento, notificação e integração com Google Calendar, Outlook, etc.) estão implementadas conforme o esperado para um software de agendamento?
     - **Hipótese:** Acredita-se que o Cal.com implementa a maioria das funcionalidades essenciais para um sistema de agendamento, atendendo aos requisitos esperados para um produto de sua categoria.
-2. As funcionalidades executam suas tarefas corretamente, sem falhas perceptíveis pelo usuário?
-    - **Hipótese:** Espera-se que as funcionalidades principais operem corretamente na maioria dos cenários, embora possam existir falhas menores que não comprometam a experiência do usuário de forma crítica.
+2. As funções centrais de agendamento (criação, edição, cancelamento e reagendamento) funcionam corretamente e de forma previsível?
+    - **Hipótese:** Espera-se que as funcionalidades principais de agendamento operem corretamente na maioria dos cenários, embora possam existir falhas menores que não comprometam a experiência do usuário de forma crítica.
 3. Existem funcionalidades redundantes ou ausentes?
     - **Hipótese:** A hipótese é de que o sistema possui as funcionalidades adequadas para seu propósito, sem redundâncias significativas. No entanto, podem ser identificadas oportunidades de melhoria ou a ausência de funcionalidades secundárias.
-4. A ausência ou redundância impacta negativamente o uso do sistema?
+4. Qual o nível de impacto de funcionalidades ausentes ou redundantes para o uso do sistema?
     - **Hipótese:** Supõe-se que a ausência de funcionalidades secundárias pode impactar a experiência de usuários avançados, mas não deve prejudicar o fluxo principal de agendamento para o usuário comum.
-5. O comportamento do sistema é consistente em diferentes cenários de uso?
+5. Qual o nível de consistência do uso do software entre diferentes navegadores e sessões?
     - **Hipótese:** Espera-se que o sistema mantenha um comportamento consistente, garantindo que as ações do usuário resultem em respostas previsíveis e uniformes na maioria dos cenários de uso.
 
 ### Portabilidade
@@ -62,21 +62,25 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 
 | **Código** | **Métrica** | **Tipo** | **Descrição** |
 |-------------|--------------|-----------|----------------|
-| **M1** | Percentual de requisitos funcionais implementados | Quantitativa | (Nº de requisitos implementados ÷ Nº total de requisitos) × 100 |
-| **M2** | Taxa de sucesso em testes funcionais | Quantitativa | (Nº de testes aprovados ÷ Nº total de testes executados) × 100 |
-| **M3** | Número de falhas funcionais registradas por release | Quantitativa | Contagem de issues de falhas funcionais abertas/fechadas |
-| **M4** | Grau de consistência funcional | Qualitativa | Avaliação baseada na observação de comportamento uniforme das funções |
+| **M1** | Cobertura funcional esperada | Quantitativa | Verificar quantas funcionalidades essenciais (agendar, reagendar, cancelar, integrar, notificar) estão implementadas e acessíveis. <br>(Nº funcionalidades implementadas ÷ Nº esperadas) × 100 |
+| **M2** | Taxa de sucesso em execução de funcionalidades principais | Quantitativa | Executar cada funcionalidade principal ao menos 3 vezes e calcular. <br>(Execuções bem-sucedidas ÷ Total de execuções) × 100 |
+| **M3** | Taxa de sucesso dos fluxos de agendamento | Quantitativa | Realizar 5 testes completos (criar, editar, reagendar, cancelar). <br>(Fluxos bem-sucedidos ÷ Total de testes) × 100 |
+| **M4** | Ocorrência de erros visíveis durante o agendamento | Quantitativa | Contar mensagens de erro, falhas na interface ou inconsistências em cada teste funcional. |
+| **M5** |Percentual de funcionalidades esperadas ausentes | Quantitativa | Identificar funcionalidades essenciais em outras aplicações de agendamento mas não encontradas na aplicação. <br>(Ausentes ÷ Esperadas) × 100 |
+| **M6** |Número de funcionalidades redundantes identificadas | Quantitativa | Contar funções que duplicam propósitos (ex.: dois modos diferentes de cancelar o mesmo evento).|
+| **M7** |Avaliação de impacto percebido pelos avaliadores | Qualitativa | Atribuir notas de 1 ( sem impacto) a 5 (muito impacto) para cada função ausente ou redundante e calcular a média.|
+| **M8** |Compatibilidade entre navegadores | Quantitativa | Executar fluxos idênticos para cada navegador (criar, cancelar, reagendar) nos navegadores Chrome, Firefox e Safari. <br>(Fluxos sem erro ÷ Total) × 100|
 
 
 ### Portabilidade
 
 | **Código** | **Métrica** | **Tipo** | **Descrição** |
 |------------|-------------|----------|---------------|
-| **M5** | Taxa de sucesso de instalação em múltiplos ambientes | Quantitativa | (Nº de instalações bem-sucedidas ÷ Nº total de tentativas) × 100 |
-| **M6** | Tempo médio de implantação | Quantitativa | Tempo em minutos/horas para instalar e configurar o sistema |
-| **M7** | Número de incompatibilidades (Funcionais e Visuais) | Quantitativa | Contagem de falhas funcionais ou quebras de layout significativas registradas em diferentes SOs ou navegadores. |
-| **M8** | Qualidade Percebida da Documentação | Qualitativa | Avaliação (escala 1-5) atribuída pela equipe sobre a clareza, completude e precisão da documentação de self-hosting e configuração de dependências. |
-| **M9** | Percepção de Esforço de Implantação | Qualitativa | Avaliação (escala 1-5) do esforço (cognitivo e técnico) percebido pela equipe para concluir a instalação, mesmo seguindo a documentação. |
+| **M9** | Taxa de sucesso de instalação em múltiplos ambientes | Quantitativa | (Nº de instalações bem-sucedidas ÷ Nº total de tentativas) × 100 |
+| **M10** | Tempo médio de implantação | Quantitativa | Tempo em minutos/horas para instalar e configurar o sistema |
+| **M11** | Número de incompatibilidades (Funcionais e Visuais) | Quantitativa | Contagem de falhas funcionais ou quebras de layout significativas registradas em diferentes SOs ou navegadores. |
+| **M12** | Qualidade Percebida da Documentação | Qualitativa | Avaliação (escala 1-5) atribuída pela equipe sobre a clareza, completude e precisão da documentação de self-hosting e configuração de dependências. |
+| **M13** | Percepção de Esforço de Implantação | Qualitativa | Avaliação (escala 1-5) do esforço (cognitivo e técnico) percebido pela equipe para concluir a instalação, mesmo seguindo a documentação. |
 
 
 ## Histórico de Versões
@@ -91,6 +95,7 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 | `1.5` | 20/10/2025 | Reformula o Objetivo da avaliação de acordo com a GQM após feedback da professora | [Pedro Braga](https://github.com/Stain19) |
 | `1.6` | 20/10/2025 | Adiciona hipóteses para cada pergunta de adequação funcional e portabilidade, além de reformular as perguntas de portabilidade | [Pedro Braga](https://github.com/Stain19) |
 | `1.7` | 21/10/2025 | Refina as métricas de portabilidade, desmembrando a métrica M8 para melhor adequação às questões | [Atyrson Souto](https://github.com/Atyrson) |
+| `1.8`  | 21/10/2025 | Ajuste nas questões de adequação funcional e suas métricas  | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 
 ## Referências
 
