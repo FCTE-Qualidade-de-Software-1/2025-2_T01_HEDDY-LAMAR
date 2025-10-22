@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Especificação da Avaliação
 
 ## Metodologia **GQM (Goal Question Metric)**
@@ -46,41 +51,45 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 
 ### Portabilidade
 
-1. O processo de *self-hosting* (auto-hospedagem) do Cal.com é bem documentado e pode ser executado com sucesso em diferentes ambientes de servidor (ex: Docker, Vercel, provedores de nuvem)?
+1. O processo de *self-hosting* (auto-hospedagem) do Cal.com é bem documentado e pode ser executado com sucesso em diferentes ambientes de servidor ?
     - **Hipótese:** Acredita-se que a documentação oficial fornece um guia claro para a implantação, permitindo que usuários com conhecimento técnico moderado realizem o *self-hosting* com sucesso.
-2. A aplicação web do Cal.com mantém sua funcionalidade e aparência consistentes quando acessada a partir de diferentes navegadores (Chrome, Firefox, Safari)?
+2. A aplicação web do Cal.com mantém sua funcionalidade e aparência consistentes quando acessada a partir de diferentes navegadores?
     - **Hipótese:** Espera-se que a aplicação seja totalmente funcional e consistente nos principais navegadores, com possíveis variações visuais mínimas que não afetem a usabilidade.
 3. O esforço necessário para configurar e implantar uma instância própria do Cal.com é considerado baixo?
     - **Hipótese:** A hipótese é de que o esforço de implantação é baixo para ambientes baseados em Docker, mas pode ser moderado em configurações de servidor mais tradicionais que exigem gerenciamento manual de dependências.
-4. As dependências de infraestrutura (banco de dados, variáveis de ambiente, etc.) necessárias para a implantação estão claramente especificadas e são de fácil gerenciamento?
+4. As dependências de infraestrutura necessárias para a implantação estão claramente especificadas e são de fácil gerenciamento?
     - **Hipótese:** Supõe-se que as dependências críticas estão bem documentadas, mas a configuração de serviços externos (como provedores de e-mail) pode exigir um esforço adicional.
-
+5. A interface e as funcionalidades do Cal.com permanecem acessíveis e utilizáveis em diferentes dispositivos?
+    - **Hipótese:** Espera-se que o design responsivo da aplicação mantenha todas as principais funcionalidades operacionais e legíveis em qualquer dispositivo, sem perda significativa de usabilidade.
 
 ## Métricas (Metrics)
 
 ### Adequação Funcional
 
-| **Código** | **Métrica** | **Tipo** | **Descrição** |
-|-------------|--------------|-----------|----------------|
-| **M1** | Cobertura funcional esperada | Quantitativa | Verificar quantas funcionalidades essenciais (agendar, reagendar, cancelar, integrar, notificar) estão implementadas e acessíveis. <br>(Nº funcionalidades implementadas ÷ Nº esperadas) × 100 |
-| **M2** | Taxa de sucesso em execução de funcionalidades principais | Quantitativa | Executar cada funcionalidade principal ao menos 3 vezes e calcular. <br>(Execuções bem-sucedidas ÷ Total de execuções) × 100 |
-| **M3** | Taxa de sucesso dos fluxos de agendamento | Quantitativa | Realizar 5 testes completos (criar, editar, reagendar, cancelar). <br>(Fluxos bem-sucedidos ÷ Total de testes) × 100 |
-| **M4** | Ocorrência de erros visíveis durante o agendamento | Quantitativa | Contar mensagens de erro, falhas na interface ou inconsistências em cada teste funcional. |
-| **M5** |Percentual de funcionalidades esperadas ausentes | Quantitativa | Identificar funcionalidades essenciais em outras aplicações de agendamento mas não encontradas na aplicação. <br>(Ausentes ÷ Esperadas) × 100 |
-| **M6** |Número de funcionalidades redundantes identificadas | Quantitativa | Contar funções que duplicam propósitos (ex.: dois modos diferentes de cancelar o mesmo evento).|
-| **M7** |Avaliação de impacto percebido pelos avaliadores | Qualitativa | Atribuir notas de 1 ( sem impacto) a 5 (muito impacto) para cada função ausente ou redundante e calcular a média.|
-| **M8** |Compatibilidade entre navegadores | Quantitativa | Executar fluxos idênticos para cada navegador (criar, cancelar, reagendar) nos navegadores Chrome, Firefox e Safari. <br>(Fluxos sem erro ÷ Total) × 100|
+| **Código** | **Métrica** | **Tipo** | **Descrição** | **Critério de Julgamento** |
+|--------|----------|------|------------|------------------------|
+| **M1** | Cobertura funcional esperada | Quantitativa | Verificar quantas funcionalidades essenciais (agendar, reagendar, cancelar, integrar, notificar) estão implementadas e acessíveis.<br>**Fórmula:** (Nº funcionalidades implementadas ÷ Nº esperadas) × 100 | ≥ 90% = Excelente <br>70–89% = Regular <br><70% = Insatisfatória |
+| **M2** | Taxa de sucesso em execução de funcionalidades principais | Quantitativa | Executar cada funcionalidade principal ao menos 3 vezes e calcular.<br>**Fórmula:** (Execuções bem-sucedidas ÷ Total de execuções) × 100 | ≥ 95% = Excelente <br>85–94% = Boa <br><85% = Insatisfatória |
+| **M3** | Taxa de sucesso dos fluxos de agendamento | Quantitativa | Realizar 5 testes completos (criar, editar, reagendar, cancelar).<br>**Fórmula:** (Fluxos bem-sucedidos ÷ Total de testes) × 100 | 100% = Excelente <br>90–99% = Regular <br><90% = Insatisfatória |
+| **M4** | Ocorrência de erros visíveis durante o agendamento | Quantitativa | Contar mensagens de erro, falhas na interface ou inconsistências em cada teste funcional. | 0–2 = Excelente <br>3–5 = Regular <br>>5 = Insatisfatória |
+| **M5** | Percentual de funcionalidades esperadas ausentes | Quantitativa | Identificar funcionalidades essenciais em outras aplicações de agendamento mas não encontradas na aplicação.<br>**Fórmula:** (Ausentes ÷ Esperadas) × 100 | ≤ 5% = Excelente <br>6–15% = Regular <br>>15% = Insatisfatória |
+| **M6** | Número de funcionalidades redundantes identificadas | Quantitativa | Contar funções que duplicam propósitos (ex.: dois modos diferentes de cancelar o mesmo evento). | 0–1 = Excelente <br>2–3 = Regular <br>>3 = Insatisfatória |
+| **M7** | Avaliação de impacto percebido pelos avaliadores | Qualitativa | Atribuir notas de 1 (sem impacto) a 5 (muito impacto) para cada função ausente ou redundante e calcular a média. | ≤ 2 = Excelente <br>3 = Regular <br>>3 = Insatisfatória |
+| **M8** | Compatibilidade entre navegadores | Quantitativa | Executar fluxos idênticos (criar, cancelar, reagendar) em Chrome, Firefox e Safari.<br>**Fórmula:** (Fluxos sem erro ÷ Total de fluxos testados) × 100 | ≥ 95% = Excelente <br>80–94% = Boa <br><80% = Insatisfatória |
 
 
 ### Portabilidade
 
-| **Código** | **Métrica** | **Tipo** | **Descrição** |
-|------------|-------------|----------|---------------|
-| **M9** | Taxa de sucesso de instalação em múltiplos ambientes | Quantitativa | (Nº de instalações bem-sucedidas ÷ Nº total de tentativas) × 100 |
-| **M10** | Tempo médio de implantação | Quantitativa | Tempo em minutos/horas para instalar e configurar o sistema |
-| **M11** | Número de incompatibilidades (Funcionais e Visuais) | Quantitativa | Contagem de falhas funcionais ou quebras de layout significativas registradas em diferentes SOs ou navegadores. |
-| **M12** | Qualidade Percebida da Documentação | Qualitativa | Avaliação (escala 1-5) atribuída pela equipe sobre a clareza, completude e precisão da documentação de self-hosting e configuração de dependências. |
-| **M13** | Percepção de Esforço de Implantação | Qualitativa | Avaliação (escala 1-5) do esforço (cognitivo e técnico) percebido pela equipe para concluir a instalação, mesmo seguindo a documentação. |
+| **Código** | **Métrica** | **Tipo** | **Descrição** | **Critério de Julgamento** |
+|--------|------|------------|------------------------|------------|
+| **M9** | **Taxa de sucesso de instalação em múltiplos ambientes** | Quantitativa | Verificar, com base na documentação, se o processo de instalação pode ser realizado em diferentes sistemas. <br>**Fórmula:** (Instalações bem documentadas ÷ Total de ambientes descritos) × 100 | ≥ 90% = Excelente <br>70–89% = Regular <br><70% = Insatisfatório |
+| **M10** | **Tempo médio estimado de implantação** | Quantitativa | Estimar o tempo total descrito na documentação para preparar o ambiente e executar o sistema até o funcionamento pleno. <br>**Fórmula:** (∑ tempos estimados ÷ nº de ambientes) | ≤ 30 min = Excelente <br>31–60 = Regular <br>>60 = Precisa de otimização |
+| **M11** | **Qualidade percebida da documentação de instalação** | Qualitativa | Avaliar (escala 1–5) a clareza, completude e precisão da documentação. Média das notas dos avaliadores. | ≥ 4,5 = Excelente <br>3–4,4 = Boa <br><3 = Fraca |
+| **M12** | **Esforço de implantação percebido pela equipe** | Qualitativa | Avaliação (escala 1–5) do esforço cognitivo e técnico necessário para compreender e seguir a documentação de instalação. | ≤ 2 = Excelente (fácil) <br>3 = Moderado <br>≥ 4 = Difícil |
+| **M13** | **Compatibilidade entre navegadores** | Quantitativa | Executar os mesmos fluxos principais (criar, reagendar, cancelar) em diferentes navegadores. <br>**Fórmula:** (Fluxos sem erro ÷ Total testados) × 100 | ≥ 95% = Excelente <br>80–94% = Boa <br><80% = Ruim |
+| **M14** | **Compatibilidade de execução em diferentes dispositivos** | Quantitativa | Verificar se as funcionalidades principais permanecem utilizáveis e a interface se mantém legível em desktop, tablet e smartphone. <br>**Fórmula:** (Dispositivos com funcionamento completo ÷ Total de dispositivos testados) × 100 | 100% = Excelente <br>≥ 80% = Boa <br><80% = Insatisfatória |
+
+
 
 
 ## Histórico de Versões
@@ -96,6 +105,7 @@ Analisar o software Cal.com com o propósito de avaliar sua qualidade, com respe
 | `1.6` | 20/10/2025 | Adiciona hipóteses para cada pergunta de adequação funcional e portabilidade, além de reformular as perguntas de portabilidade | [Pedro Braga](https://github.com/Stain19) |
 | `1.7` | 21/10/2025 | Refina as métricas de portabilidade, desmembrando a métrica M8 para melhor adequação às questões | [Atyrson Souto](https://github.com/Atyrson) |
 | `1.8`  | 21/10/2025 | Ajuste nas questões de adequação funcional e suas métricas  | [Gustavo Haubert](https://github.com/GustavoHaubert) |
+| `1.9`  | 21/10/2025 | Adiciona novas métricas de portabilidade e adiciona critérios de julgamento nas duas tabelas  | [Cairo Florenço](https://github.com/CA1RO) |
 
 ## Referências
 
