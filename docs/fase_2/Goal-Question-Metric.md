@@ -20,7 +20,7 @@ Para a realização da etapa de especificação da avaliação utilizaremos a me
 <div align="center">
   <strong>Figura 1 – Definição das Métricas GQM</strong>
   <br>
-  <img src="../assets/gqm_diagrama.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
+  <img src="../../docs/assets/gqm_diagrama.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
   <br>
   <em>Fonte: Silva et al. (2009, p. 4).</em>
 </div>
@@ -39,7 +39,7 @@ Para a realização da etapa de especificação da avaliação utilizaremos a me
 <div align="center">
   <strong>Figura 2 – Descrição das Métricas</strong>
   <br>
-  <img src="../assets/GQM/basili_metrics.png" alt="Métricas">
+  <img src="../../docs/assets/GQM/basili_metrics.png" alt="Métricas">
   <br>
   <em>Fonte: Basili et al. (1994, p. 529).</em>
 </div>
@@ -78,7 +78,7 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 <div align="center">
   <strong>Figura 3 – Descrição dos Objetivos</strong>
   <br>
-  <img src="../assets/GQM/basili_goals.png" alt="Objetivos">
+  <img src="../../docs/assets/GQM/basili_goals.png" alt="Objetivos">
   <br>
   <em>Fonte: Basili et al. (1994, p. 528).</em>
 </div>
