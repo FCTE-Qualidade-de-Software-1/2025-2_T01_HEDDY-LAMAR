@@ -1,12 +1,3 @@
----
-
-hide:
-
-  - navigation
-  - toc
-
----
-
 # 1. Especificação da Avaliação
 
 ## 1.1. Metodologia **GQM (Goal Question Metric)**
