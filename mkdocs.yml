@@ -28,8 +28,12 @@ theme:
 
 nav:
   - Home: index.md
-  - "Fase 01 - Requisitos de Avaliação": fase_1/index.md
-  - "Fase 02 - Especificação da Avaliação": fase_2/index.md
+  - Fase 1 - Propósito da Avaliação:
+    - "Fase 01 - Requisitos de Avaliação": fase_1/index.md
+  - Fase 2 - Especificação da Avaliação:
+    - "Fase 02 - Aplicação GQM": fase_2/index.md
+    - "1° Objetivo de Medição: Adequação Funcional": fase_2/obj_adequacao_funcional.md
+    - "2° Objetivo de Medição: Portabilidade": fase_2/obj_portabilidade.md
 
 plugins:
   - minify
