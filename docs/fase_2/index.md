@@ -103,6 +103,14 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 
 ---
 
+## Referências
+
+>SILVA, Carlos Vinícius Pereira da; MOURA, Déborah Carvalho de; CAMPOS, Danylo de Castro; NERY, Paulo. *GQM: Goal - Question - Metric*. 2009.
+>
+>CAL.COM. *About Cal.com, Inc. Connecting a billion people by 2031*. Disponível em: https://cal.com/about. Acesso em: 23 out. 2025.
+>
+>BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. *Goal Question Metric Paradigm*. In: MARCINIAK, John J. (Ed.). Encyclopedia of Software Engineering - 2° Vol. New York: John Wiley & Sons, Inc., 1994. P. 528, 529. 
+
 ## Histórico de Versões
 
 | Versão | Data       | Descrição                                                               | Autor                               |
@@ -119,11 +127,6 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 | `1.9`  | 21/10/2025 | Adiciona novas métricas de portabilidade e adiciona critérios de julgamento nas duas tabelas  | [Cairo Florenço](https://github.com/CA1RO) |
 | `2.0`  | 23/10/2025 | Padronização de artefatos e tabelas de acordo com estruturação hierárquica de objetivo, questões e métricas, juntamente da adição de novos conceitos e suas respectivas referências | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 | `2.1`  | 23/10/2025 | Criação de estruturação mais adequada com separação de artefatos | [Antonio Carvalho](https://github.com/antonioscarvalho) |
+| `2.2`  | 24/10/2025 | Adiciona diagramas de Adequação e Portabilidade e atualiza critérios de julgamento nas duas tabelas  | [Cairo Florenço](https://github.com/CA1RO) |
 
-## Referências
 
-SILVA, Carlos Vinícius Pereira da; MOURA, Déborah Carvalho de; CAMPOS, Danylo de Castro; NERY, Paulo. *GQM: Goal - Question - Metric*. 2009.
-
-CAL.COM. *About Cal.com, Inc. Connecting a billion people by 2031*. Disponível em: https://cal.com/about. Acesso em: 23 out. 2025.
-
-BASILI, Victor R.; CALDIERA, Gianluigi; ROMBACH, H. Dieter. *Goal Question Metric Paradigm*. In: MARCINIAK, John J. (Ed.). Encyclopedia of Software Engineering - 2° Vol. New York: John Wiley & Sons, Inc., 1994. P. 528, 529. 
