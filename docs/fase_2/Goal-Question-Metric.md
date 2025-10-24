@@ -7,9 +7,9 @@ hide:
 
 ---
 
-# Especificação da Avaliação
+# 1. Especificação da Avaliação
 
-## Metodologia **GQM (Goal Question Metric)**
+## 1.1. Metodologia **GQM (Goal Question Metric)**
 
 Para a realização da etapa de especificação da avaliação utilizaremos a metodologia GQM.
 
@@ -39,7 +39,7 @@ Para a realização da etapa de especificação da avaliação utilizaremos a me
 <div align="center">
   <strong>Figura 2 – Descrição das Métricas</strong>
   <br>
-  <img src="../assets/GQM/basili_metrics.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
+  <img src="../assets/GQM/basili_metrics.png" alt="Métricas">
   <br>
   <em>Fonte: Basili et al. (1994, p. 529).</em>
 </div>
@@ -54,7 +54,7 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 
 ---
 
-## Escopo da Avaliação
+## 1.2. Escopo da Avaliação
 
 | **Elemento** | **Descrição** |
 | :------------ | :------------- |
@@ -65,7 +65,7 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 
 ---
 
-### Objetivos (Goals)
+## 1.3. Objetivos (Goals)
 
 >Neste nível, um objetivo é feito para um determinado objeto de medição, podendo ser analisado sob diferentes perspectivas:
 >- Produtos: artefatos e entregáveis gerados ao longo do ciclo de vida do sistema, como especificações, diagramas, código-fonte e casos de teste;
@@ -76,14 +76,14 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 <br>
 <br>
 <div align="center">
-  <strong>Figura 3 – Descrição das Métricas</strong>
+  <strong>Figura 3 – Descrição dos Objetivos</strong>
   <br>
-  <img src="../assets/GQM/basili_goals.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
+  <img src="../assets/GQM/basili_goals.png" alt="Objetivos">
   <br>
   <em>Fonte: Basili et al. (1994, p. 528).</em>
 </div>
 
-### Links para as páginas dos nossos artefatos GQM:
+## Links para as páginas dos nossos artefatos GQM:
 
 - [1° Objetivo de Medição: Adequação Funcional](../fase_2/obj_adequacao_funcional.md)  
 - [2° Objetivo de Medição: Portabilidade](../fase_2/obj_portabilidade.md)
