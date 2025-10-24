@@ -10,25 +10,6 @@
 
 **Tabela 1 – 1° Objetivo de Medição: Adequação Funcional**
 
----
-
-### Questões (Q)
-
->Nesse estágio, um conjunto de questões orienta a forma de avaliação do objetivo definido, descrevendo como e em que medida o objeto será examinado segundo um modelo de qualidade.
->Essas perguntas buscam caracterizar o produto, processo ou recurso em relação a aspectos específicos da qualidade, permitindo compreender seu desempenho sob o ponto de vista selecionado.
->
->(BASILI et al., 1994, p. 528)
-
-<div align="center">
-  <strong>Figura 4 – Descrição das Questões</strong>
-  <br>
-  <img src="../assets/GQM/basili_questions.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
-  <br>
-  <em>Fonte: Basili et al. (1994, p. 528).</em>
-</div>
-
----
-
 #### Q1 – Funcionalidades Principais
 As funcionalidades principais do sistema (agendamento, notificação e integração com Google Calendar e Outlook) estão implementadas conforme o esperado para um software de agendamento?
 

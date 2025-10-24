@@ -11,14 +11,25 @@ Para a realização da etapa de especificação da avaliação utilizaremos a me
 <div align="center">
   <strong>Figura 1 – Definição das Métricas GQM</strong>
   <br>
-  <img src="../../docs/assets/gqm_diagrama.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
+  <img src="../assets/gqm_diagrama.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
   <br>
   <em>Fonte: Silva et al. (2009, p. 4).</em>
 </div>
 
 
 <br>
-<br>
+
+
+Analisar o software Cal.com, uma plataforma de agendamento open source e auto-hospedável, com o propósito de avaliar sua qualidade quanto às características de Adequação Funcional e Portabilidade, de acordo com o modelo de qualidade ISO/IEC 25010.
+
+A avaliação busca verificar o grau de completude e correção das funcionalidades essenciais de agendamento, bem como a capacidade da aplicação de operar e ser implantada em diferentes ambientes.
+
+A análise é conduzida do ponto de vista dos usuários finais e avaliadores técnicos, considerando o contexto de uso real do sistema, que inclui a integração com calendários externos (como Google Calendar e Outlook), a execução multiplataforma (Linux, Windows e macOS) e o suporte a implantação via self-hosting documentada pela equipe do Cal.com.
+
+
+---
+
+## 1.2. Métricas (Q)
 
 >Cada questão é associada a métricas que permitem responder de maneira quantitativa e verificável.
 >Os dados coletados podem ser:
@@ -30,33 +41,31 @@ Para a realização da etapa de especificação da avaliação utilizaremos a me
 <div align="center">
   <strong>Figura 2 – Descrição das Métricas</strong>
   <br>
-  <img src="../../docs/assets/GQM/basili_metrics.png" alt="Métricas">
+  <img src="../assets/GQM/basili_metrics.png" alt="Métricas">
   <br>
   <em>Fonte: Basili et al. (1994, p. 529).</em>
 </div>
 
 ---
 
-Analisar o software Cal.com, uma plataforma de agendamento open source e auto-hospedável, com o propósito de avaliar sua qualidade quanto às características de Adequação Funcional e Portabilidade, de acordo com o modelo de qualidade ISO/IEC 25010.
+## 1.3. Questões (Q)
 
-A avaliação busca verificar o grau de completude e correção das funcionalidades essenciais de agendamento, bem como a capacidade da aplicação de operar e ser implantada em diferentes ambientes.
+>Nesse estágio, um conjunto de questões orienta a forma de avaliação do objetivo definido, descrevendo como e em que medida o objeto será examinado segundo um modelo de qualidade.
+>Essas perguntas buscam caracterizar o produto, processo ou recurso em relação a aspectos específicos da qualidade, permitindo compreender seu desempenho sob o ponto de vista selecionado.
+>
+>(BASILI et al., 1994, p. 528)
 
-A análise é conduzida do ponto de vista dos usuários finais e avaliadores técnicos, considerando o contexto de uso real do sistema, que inclui a integração com calendários externos (como Google Calendar e Outlook), a execução multiplataforma (Linux, Windows e macOS) e o suporte a implantação via self-hosting documentada pela equipe do Cal.com.
-
----
-
-## 1.2. Escopo da Avaliação
-
-| **Elemento** | **Descrição** |
-| :------------ | :------------- |
-| **O que será avaliado** | O sistema **Cal.com** (versão open source estável disponível no GitHub até outubro de 2025), com foco nos módulos de **agendamento de eventos**, **integração com calendários externos** (Google Calendar, Outlook) e **envio de notificações**. |
-| **O que não será avaliado** | Aspectos relacionados à **segurança da informação**, **desempenho do sistema** e **usabilidade da interface**, que serão abordados em etapas futuras do projeto. |
-| **Ambiente de teste e condições** | Testes realizados em ambiente controlado, com os seguintes parâmetros:<br>• **Sistemas Operacionais:** Ubuntu 22.04, Windows 11 e macOS Sonoma<br>• **Navegadores:** Google Chrome, Mozilla Firefox e Safari<br>• **Dispositivos:** Desktop e notebook<br>• **Conexão:** Internet banda larga estável |
-| **Responsáveis e papéis** | • **Equipe de Avaliação:** autores do projeto (Antonio Carvalho, Gustavo Haubert, Atyrson Souto, Vinicius Alves, Cairo Florenço e Pedro Henrique Braga de Morais)<br>• **Orientação e supervisão:** Profa. **Cristiane Soares Ramos**<br>• **Responsáveis pela coleta e interpretação de métricas:** Equipe de desenvolvimento e avaliadores de qualidade |
+<div align="center">
+  <strong>Figura 4 – Descrição das Questões</strong>
+  <br>
+  <img src="../assets/GQM/basili_questions.png" alt="Diagrama GQM com Nível Conceitual, Operacional e Quantitativo">
+  <br>
+  <em>Fonte: Basili et al. (1994, p. 528).</em>
+</div>
 
 ---
 
-## 1.3. Objetivos (Goals)
+## 1.4. Objetivos (Goals)
 
 >Neste nível, um objetivo é feito para um determinado objeto de medição, podendo ser analisado sob diferentes perspectivas:
 >- Produtos: artefatos e entregáveis gerados ao longo do ciclo de vida do sistema, como especificações, diagramas, código-fonte e casos de teste;
@@ -69,10 +78,23 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 <div align="center">
   <strong>Figura 3 – Descrição dos Objetivos</strong>
   <br>
-  <img src="../../docs/assets/GQM/basili_goals.png" alt="Objetivos">
+  <img src="../assets/GQM/basili_goals.png" alt="Objetivos">
   <br>
   <em>Fonte: Basili et al. (1994, p. 528).</em>
-</div>
+</div> 
+
+---
+
+## 1.5. Escopo da Avaliação
+
+| **Elemento** | **Descrição** |
+| :------------ | :------------- |
+| **O que será avaliado** | O sistema **Cal.com** (versão open source estável disponível no GitHub até outubro de 2025), com foco nos módulos de **agendamento de eventos**, **integração com calendários externos** (Google Calendar, Outlook) e **envio de notificações**. |
+| **O que não será avaliado** | Aspectos relacionados à **segurança da informação**, **desempenho do sistema** e **usabilidade da interface**, que serão abordados em etapas futuras do projeto. |
+| **Ambiente de teste e condições** | Testes realizados em ambiente controlado, com os seguintes parâmetros:<br>• **Sistemas Operacionais:** Ubuntu 22.04, Windows 11 e macOS Sonoma<br>• **Navegadores:** Google Chrome, Mozilla Firefox e Safari<br>• **Dispositivos:** Desktop e notebook<br>• **Conexão:** Internet banda larga estável |
+| **Responsáveis e papéis** | • **Equipe de Avaliação:** autores do projeto (Antonio Carvalho, Gustavo Haubert, Atyrson Souto, Vinicius Alves, Cairo Florenço e Pedro Henrique Braga de Morais)<br>• **Orientação e supervisão:** Profa. **Cristiane Soares Ramos**<br>• **Responsáveis pela coleta e interpretação de métricas:** Equipe de desenvolvimento e avaliadores de qualidade |
+
+---
 
 ## Links para as páginas dos nossos artefatos GQM:
 
