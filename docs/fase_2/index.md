@@ -24,7 +24,7 @@ Analisar o software Cal.com, uma plataforma de agendamento open source e auto-ho
 
 A avaliação busca verificar o grau de completude e correção das funcionalidades essenciais de agendamento, bem como a capacidade da aplicação de operar e ser implantada em diferentes ambientes.
 
-A análise é conduzida do ponto de vista dos usuários finais e avaliadores técnicos, considerando o contexto de uso real do sistema, que inclui a integração com calendários externos (como Google Calendar e Outlook), a execução multiplataforma (Linux, Windows e macOS) e o suporte a implantação via self-hosting documentada pela equipe do Cal.com.
+A análise é conduzida do ponto de vista dos usuários finais e avaliadores técnicos, considerando o contexto de uso real do sistema, que inclui a integração com calendários externos (como Google Calendar e Outlook), a execução em múltiplos navegadores (Chrome, Safari e Firefox) e o suporte a implantação via self-hosting documentada pela equipe do Cal.com.
 
 
 ---
@@ -125,8 +125,7 @@ A análise é conduzida do ponto de vista dos usuários finais e avaliadores té
 | `1.7` | 21/10/2025 | Refina as métricas de portabilidade, desmembrando a métrica M8 para melhor adequação às questões | [Atyrson Souto](https://github.com/Atyrson) |
 | `1.8`  | 21/10/2025 | Ajuste nas questões de adequação funcional e suas métricas  | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.9`  | 21/10/2025 | Adiciona novas métricas de portabilidade e adiciona critérios de julgamento nas duas tabelas  | [Cairo Florenço](https://github.com/CA1RO) |
-| `2.0`  | 23/10/2025 | Padronização de artefatos e tabelas de acordo com estruturação hierárquica de objetivo, questões e métricas, juntamente da adição de novos conceitos e suas respectivas referências | [Antonio Carvalho](https://github.com/antonioscarvalho) |
-| `2.1`  | 23/10/2025 | Criação de estruturação mais adequada com separação de artefatos | [Antonio Carvalho](https://github.com/antonioscarvalho) |
-| `2.2`  | 24/10/2025 | Adiciona diagramas de Adequação e Portabilidade e atualiza critérios de julgamento nas duas tabelas  | [Cairo Florenço](https://github.com/CA1RO) |
-
-
+| `1.10`  | 23/10/2025 | Padronização de artefatos e tabelas de acordo com estruturação hierárquica de objetivo, questões e métricas, juntamente da adição de novos conceitos e suas respectivas referências | [Antonio Carvalho](https://github.com/antonioscarvalho) |
+| `1.11`  | 23/10/2025 | Criação de estruturação mais adequada com separação de artefatos | [Antonio Carvalho](https://github.com/antonioscarvalho) |
+| `1.12`  | 24/10/2025 | Adiciona diagramas de Adequação e Portabilidade e atualiza critérios de julgamento nas duas tabelas  | [Cairo Florenço](https://github.com/CA1RO) |
+| `1.13`  | 25/10/2025 | Corrige especificação de aplicabilidade do sistema em multiplataformas no critério de portabilidade | [Pedro Braga](https://github.com/Stain19) |
