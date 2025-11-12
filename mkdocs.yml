@@ -34,6 +34,8 @@ nav:
     - "Aplicação GQM": fase_2/index.md
     - "1° Objetivo de Medição: Adequação Funcional": fase_2/obj_adequacao_funcional.md
     - "2° Objetivo de Medição: Portabilidade": fase_2/obj_portabilidade.md
+  - Fase 3 - Plano da Avaliação:
+    - "Fase 03 - Plano de Execução da Avaliação": fase_3/index.md
 
 plugins:
   - minify
