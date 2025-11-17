@@ -451,7 +451,7 @@ O método documentado garante que qualquer avaliador — independente de partici
 
 ---
 
-## 14. Histórico de Versões
+## 15. Histórico de Versões
 
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
