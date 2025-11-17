@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-Este documento descreve o plano detalhado de execução da avaliação do sistema Cal.com, seguindo a metodologia GQM (Goal-Question-Metric) estabelecida na Fase 2. O foco está na implementação prática das métricas de **Adequação Funcional** e **Portabilidade** conforme o modelo de qualidade ISO/IEC 25010.
+Este documento descreve *como* executar a avaliação (passo a passo) para obter as medidas definidas na Fase 2 (métricas de Adequação Funcional e Portabilidade), como registrar evidências, calcular métricas e aplicar os critérios de julgamento. O plano está organizado por métrica: para cada uma há objetivos, passos de execução, entrada/saída, evidências exigidas e como calcular/julgar o resultado.
 
 ## 2. Objetivos da Fase 3
 
@@ -13,13 +13,8 @@ Este documento descreve o plano detalhado de execução da avaliação do sistem
 
 ---
 
-## 3. Visão Geral
 
-Este documento descreve *como* executar a avaliação (passo a passo) para obter as medidas definidas na Fase 2 (métricas de Adequação Funcional e Portabilidade), como registrar evidências, calcular métricas e aplicar os critérios de julgamento. O plano está organizado por métrica: para cada uma há objetivos, passos de execução, entrada/saída, evidências exigidas e como calcular/julgar o resultado.
-
----
-
-## 4. Metodologia de Avaliação
+## 3. Metodologia de Avaliação
 
 A avaliação seguirá uma abordagem sistemática baseada em:
 - **Testes funcionais** para métricas de adequação funcional
@@ -27,7 +22,7 @@ A avaliação seguirá uma abordagem sistemática baseada em:
 - **Avaliação subjetiva** por múltiplos avaliadores
 - **Coleta sistemática** de evidências objetivas
 
-### 4.1. Princípios de Avaliação
+### 3.1. Princípios de Avaliação
 - **Reprodutibilidade**: Todos os testes devem ser replicáveis
 - **Objetividade**: Evidências devem ser mensuráveis e verificáveis
 - **Transparência**: Processos e critérios claramente documentados
@@ -35,7 +30,7 @@ A avaliação seguirá uma abordagem sistemática baseada em:
 
 ---
 
-### 4.2. Método de Avaliação (Resumo Estruturado)
+### 3.2. Método de Avaliação (Resumo Estruturado)
 
 | Etapa | Descrição | Responsável | Evidência |
 |-------|-----------|-------------|-----------|
@@ -48,7 +43,7 @@ A avaliação seguirá uma abordagem sistemática baseada em:
 
 ---
 
-### 4.3 Instruções Gerais Para o Avaliador
+### 3.3 Instruções Gerais Para o Avaliador
 
 Antes de iniciar:
 
@@ -71,21 +66,21 @@ Após a execução:
 
 ---
 
-## 5. Preparação (Artefatos e Templates Necessários)
+## 4. Preparação (Artefatos e Templates Necessários)
 
-### 5.1. Documentação de Suporte
+### 4.1. Documentação de Suporte
 - **Planilha padrão de coleta** com abas: `meta`, `execuções`, `logs`, `evidências` (colunas mínimas: métrica, id_teste, data, ambiente, passo, resultado, observação, link_evidência)
 - **Template de caso de teste** para fluxos (passos numerados, entradas, saída esperada)
 - **Checklist de evidências** (print screens, logs de API, timestamps, capturas de console)
 - **Formulário de avaliação subjetiva** (escala 1-5 com critérios específicos)
 
-### 5.2. Ambiente de Teste
+### 4.2. Ambiente de Teste
 - **Sistemas operacionais**: Ubuntu 22.04, Windows 11, macOS Sonoma
 - **Navegadores**: Chrome (última versão), Firefox (última versão), Safari (última versão)
 - **Dispositivos**: Desktop (resolução mínima 1920x1080), Notebook (1366x768)
 - **Conexão**: Internet banda larga estável (mínimo 10 Mbps)
 
-### 5.3 Infraestrutura de Armazenamento Planejado
+### 4.3 Infraestrutura de Armazenamento Planejado
 
 | Item | Local | Obrigatório |
 |-------|-------|-------------|
@@ -95,7 +90,7 @@ Após a execução:
 
 ---
 
-## 6. Procedimento Geral de Execução (Válido para Todas as Métricas)
+## 5. Procedimento Geral de Execução (Válido para Todas as Métricas)
 
 1. **Preparação**: Ler a definição da métrica e o critério de julgamento (Fase 2)
 2. **Planejamento**: Preparar o(s) caso(s) de teste correspondente(s)
@@ -107,9 +102,9 @@ Após a execução:
 
 ---
 
-## 7. Plano por Métrica — Adequação Funcional
+## 6. Plano por Métrica — Adequação Funcional
 
-### 7.1. M1 — Cobertura Funcional Esperada
+### 6.1. M1 — Cobertura Funcional Esperada
 
 **Objetivo:** Verificar presença/acessibilidade das funções essenciais (agendar, reagendar, cancelar, integrar, notificar)
 
@@ -131,7 +126,7 @@ Após a execução:
 
 ---
 
-### 7.2. M2 — Taxa de Sucesso em Execução de Funcionalidades Principais
+### 6.2. M2 — Taxa de Sucesso em Execução de Funcionalidades Principais
 
 **Objetivo:** Medir confiabilidade das operações essenciais
 
@@ -153,7 +148,7 @@ Após a execução:
 
 ---
 
-### 7.3. M3 — Taxa de Sucesso dos Fluxos de Agendamento (5 Testes Completos)
+### 6.3. M3 — Taxa de Sucesso dos Fluxos de Agendamento (5 Testes Completos)
 
 **Objetivo:** Verificar fluxos ponta-a-ponta: criar, editar, reagendar, cancelar, excluir
 
@@ -170,7 +165,7 @@ Após a execução:
 
 ---
 
-### 7.4. M4 — Ocorrência de Erros Visíveis Durante o Agendamento
+### 6.4. M4 — Ocorrência de Erros Visíveis Durante o Agendamento
 
 **Objetivo:** Contar mensagens de erro/falhas visíveis durante os testes funcionais
 
@@ -190,7 +185,7 @@ Após a execução:
 
 ---
 
-### 7.5. M5 — Percentual de Funcionalidades Esperadas Ausentes
+### 6.5. M5 — Percentual de Funcionalidades Esperadas Ausentes
 
 **Objetivo:** Identificar lacunas em relação a um produto de referência
 
@@ -206,7 +201,7 @@ Após a execução:
 
 ---
 
-### 7.6. M6 — Número de Funcionalidades Redundantes Identificadas
+### 6.6. M6 — Número de Funcionalidades Redundantes Identificadas
 
 **Objetivo:** Detectar duplicações funcionais
 
@@ -226,7 +221,7 @@ Após a execução:
 
 ---
 
-### 7.7. M7 — Avaliação de Impacto Percebido pelos Avaliadores
+### 6.7. M7 — Avaliação de Impacto Percebido pelos Avaliadores
 
 **Objetivo:** Medir o impacto subjetivo de ausências/redundâncias
 
@@ -246,9 +241,9 @@ Após a execução:
 
 ---
 
-## 8. Plano por Métrica — Portabilidade
+## 7. Plano por Métrica — Portabilidade
 
-### 8.1. M1 — Taxa de Sucesso de Instalação em Múltiplos Ambientes
+### 7.1. M1 — Taxa de Sucesso de Instalação em Múltiplos Ambientes
 
 **Objetivo:** Validar se o software pode ser instalado corretamente em múltiplos ambientes
 
@@ -264,7 +259,7 @@ Após a execução:
 
 ---
 
-### 8.2. M2 — Tempo Médio Estimado de Implantação
+### 7.2. M2 — Tempo Médio Estimado de Implantação
 
 **Objetivo:** Medir o tempo até o sistema entrar em funcionamento
 
@@ -284,7 +279,7 @@ Após a execução:
 
 ---
 
-### 8.3. M3 — Qualidade Percebida da Documentação de Instalação
+### 7.3. M3 — Qualidade Percebida da Documentação de Instalação
 
 **Objetivo:** Avaliar clareza/completude (nota 1–5)
 
@@ -303,7 +298,7 @@ Após a execução:
 
 ---
 
-### 8.4. M4 — Esforço de Implantação Percebido
+### 7.4. M4 — Esforço de Implantação Percebido
 
 **Objetivo:** Medir esforço cognitivo/técnico (1–5)
 
@@ -322,7 +317,7 @@ Após a execução:
 
 ---
 
-### 8.5. M5 — Compatibilidade Entre Navegadores
+### 7.5. M5 — Compatibilidade Entre Navegadores
 
 **Objetivo:** Verificar que fluxos principais funcionam sem erro nos navegadores-alvo
 
@@ -342,7 +337,7 @@ Após a execução:
 
 ---
 
-### 8.6. M6 — Compatibilidade Entre Dispositivos
+### 7.6. M6 — Compatibilidade Entre Dispositivos
 
 **Objetivo:** Verificar funcionalidade/legibilidade em desktop/mobile (ou emulador)
 
@@ -358,7 +353,7 @@ Após a execução:
 
 ---
 
-### 8.7. M7 — Clareza e Autonomia na Configuração das Dependências Externas
+### 7.7. M7 — Clareza e Autonomia na Configuração das Dependências Externas
 
 **Objetivo:** Avaliar se dependências (DB, e-mail, APIs) podem ser configuradas seguindo a documentação sem necessidade de suporte ou ajuda de terceiros
 
@@ -378,7 +373,7 @@ Após a execução:
 
 ---
 
-## 9. Cronograma de Execução
+## 8. Cronograma de Execução
 
 | Fase | Atividade | Duração | Responsáveis |
 |------|-----------|---------|-------------|
@@ -389,7 +384,7 @@ Após a execução:
 
 ---
 
-## 10. Riscos e Mitigações
+## 9. Riscos e Mitigações
 
 | Risco | Probabilidade | Impacto | Mitigação |
 |-------|---------------|---------|-----------|
@@ -400,27 +395,27 @@ Após a execução:
 
 ---
 
-## 11. Consolidação, Análise e Julgamento (Após Execução de Todas as Métricas)
+## 10. Consolidação, Análise e Julgamento (Após Execução de Todas as Métricas)
 
-### 11.1. Processo de Consolidação
+### 10.1. Processo de Consolidação
 1. **Agregação**: Consolidar todas as linhas das planilhas em uma aba mestre
 2. **Cálculo automático**: Usar fórmulas para cada métrica (pré-configuradas na planilha) para obter percentuais e médias
 3. **Classificação final por métrica**: Aplicar faixas (Excelente/Boa/Regular/Insatisfatória) já definidas
 4. **Síntese por característica**: Computar score agregado para *Adequação Funcional* e *Portabilidade* (média ponderada das métricas)
 
-### 11.2. Análise de Resultados
+### 10.2. Análise de Resultados
 5. **Registro de problemas críticos**: Listar testes que falharam com evidências e passos para reproduzir
 6. **Identificação de padrões**: Agrupar falhas por tipo, gravidade e área funcional
 7. **Análise de correlação**: Verificar relações entre métricas (ex.: M2 e M4)
 
-### 11.3. Relatório Final
+### 10.3. Relatório Final
 8. **Recomendações**: Para métricas abaixo do aceitável, indicar causa provável e ação corretiva sugerida
 9. **Relatório final**: Incluir objetivo, método, tabelas de métricas, gráficos simples (percentual de conformidade) e anexos com evidências
 10. **Apresentação executiva**: Sumário para stakeholders com foco em resultados e recomendações
 
 ---
 
-## 12. Critérios de Aceitação Globais (Aplicáveis ao Relatório)
+## 11. Critérios de Aceitação Globais (Aplicáveis ao Relatório)
 
 - **Rastreabilidade completa**: Todas as métricas possuem evidência anexada (screenshot ou log)
 - **Consistência metodológica**: Todas as métricas foram calculadas e comparadas com critérios da Fase 2
@@ -429,7 +424,7 @@ Após a execução:
 - **Transparência**: Limitações da avaliação são explicitamente declaradas
 - **Reprodutibilidade**: Procedimentos suficientemente detalhados para replicação
 
-## 13. Conclusão do Método de Avaliação
+## 12. Conclusão do Método de Avaliação
 
 O método documentado garante que qualquer avaliador — independente de participação prévia — consiga conduzir o processo de forma **objetiva, repetível e rastreável**, atendendo aos requisitos da docente:
 
@@ -441,7 +436,7 @@ O método documentado garante que qualquer avaliador — independente de partici
 
 ---
 
-## 14. Referências
+## Referências
 
 > SILVA, Carlos Vinícius Pereira da; MOURA, Déborah Carvalho de; CAMPOS, Danylo de Castro; NERY, Paulo. *GQM: Goal - Question - Metric*. 2009.
 
@@ -451,7 +446,7 @@ O método documentado garante que qualquer avaliador — independente de partici
 
 ---
 
-## 15. Histórico de Versões
+## Histórico de Versões
 
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
