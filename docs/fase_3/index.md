@@ -35,6 +35,42 @@ A avaliação seguirá uma abordagem sistemática baseada em:
 
 ---
 
+### 4.2. Método de Avaliação (Resumo Estruturado)
+
+| Etapa | Descrição | Responsável | Evidência |
+|-------|-----------|-------------|-----------|
+| **Preparação** | Configurar ambientes, templates e credenciais | Equipe | Checklist preenchido |
+| **Execução** | Executar os testes definidos para cada métrica | Avaliadores | Prints, logs, formulários |
+| **Registro** | Documentar resultados em planilha padronizada | Avaliadores | Planilha centralizada |
+| **Cálculo** | Aplicar fórmulas para cada métrica | Responsável técnico | Planilha automatizada |
+| **Julgamento** | Comparar resultados com critérios estabelecidos | Equipe | Relatório parcial |
+| **Consolidação** | Criar relatório final com análise e recomendações | Grupo responsável | Documento final + anexos |
+
+---
+
+### 4.3 Instruções Gerais Para o Avaliador
+
+Antes de iniciar:
+
+1. Verificar se o ambiente está configurado conforme descrito na Seção 5.
+2. Fazer login utilizando as credenciais fornecidas.
+3. Garantir que **todos os templates estão disponíveis** (planilha, formulários, checklists).
+4. Não modificar o fluxo dos testes ou interpretação das métricas.
+5. **Registrar tudo**, mesmo erros inesperados ou dúvidas.
+
+Durante a execução:
+
+- Capturar evidências sempre que solicitado.
+- Evitar **interpretações subjetivas** onde existe mensuração objetiva.
+- Caso encontre erro, **registrar o passo exato e se o erro é reproduzível**.
+
+Após a execução:
+
+- Garantir que **toda evidência está armazenada corretamente**.
+- Confirmar que os cálculos automáticos foram gerados corretamente.
+
+---
+
 ## 5. Preparação (Artefatos e Templates Necessários)
 
 ### 5.1. Documentação de Suporte
@@ -48,6 +84,14 @@ A avaliação seguirá uma abordagem sistemática baseada em:
 - **Navegadores**: Chrome (última versão), Firefox (última versão), Safari (última versão)
 - **Dispositivos**: Desktop (resolução mínima 1920x1080), Notebook (1366x768)
 - **Conexão**: Internet banda larga estável (mínimo 10 Mbps)
+
+### 5.3 Infraestrutura de Armazenamento Planejado
+
+| Item | Local | Obrigatório |
+|-------|-------|-------------|
+| Armazenamento de evidências | Google Drive | ✔ |
+| Versionamento da planilha | GitHub do projeto | ✔ |
+| Backup dos registros | Automático diário | ✔ |
 
 ---
 
@@ -385,9 +429,19 @@ A avaliação seguirá uma abordagem sistemática baseada em:
 - **Transparência**: Limitações da avaliação são explicitamente declaradas
 - **Reprodutibilidade**: Procedimentos suficientemente detalhados para replicação
 
+## 13. Conclusão do Método de Avaliação
+
+O método documentado garante que qualquer avaliador — independente de participação prévia — consiga conduzir o processo de forma **objetiva, repetível e rastreável**, atendendo aos requisitos da docente:
+
+- Explica **como avaliar**
+- Define **o que registrar**
+- Determina **recursos necessários**
+- Apresenta **cronograma**
+- Oferece **método padronizado aplicável a qualquer ambiente**
+
 ---
 
-## 13. Referências
+## 14. Referências
 
 > SILVA, Carlos Vinícius Pereira da; MOURA, Déborah Carvalho de; CAMPOS, Danylo de Castro; NERY, Paulo. *GQM: Goal - Question - Metric*. 2009.
 
@@ -401,7 +455,8 @@ A avaliação seguirá uma abordagem sistemática baseada em:
 
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
-| `1.0`  | 17/11/2025 | Criação da estrutura inicial do plano de avaliação passo-a-passo | [Gustavo Haubert](https://github.com/GustavoHaubert) |
-| `1.1`  | 17/11/2025 | Expansão com seções de introdução, objetivos, metodologia e cronograma | [Pedro Braga](https://github.com/Stain19) |
-| `1.2`  | 17/11/2025 | Adição de riscos e mitigações, e refinamento dos critérios de julgamento | [Pedro Braga](https://github.com/Stain19) |
-| `1.3`  | 17/11/2025 | Expansão detalhada de todas as métricas com procedimentos executáveis | [Pedro Braga](https://github.com/Stain19) |
+| `1.0`  | 16/11/2025 | Criação da estrutura inicial do plano de avaliação passo-a-passo | [Gustavo Haubert](https://github.com/GustavoHaubert) |
+| `1.1`  | 16/11/2025 | Expansão com seções de introdução, objetivos, metodologia e cronograma | [Pedro Braga](https://github.com/Stain19) |
+| `1.2`  | 16/11/2025 | Adição de riscos e mitigações, e refinamento dos critérios de julgamento | [Pedro Braga](https://github.com/Stain19) |
+| `1.3`  | 16/11/2025 | Expansão detalhada de todas as métricas com procedimentos executáveis | [Pedro Braga](https://github.com/Stain19) |
+| `1.4` | 16/11/2025 | Complementação com instruções ao avaliador, infraestrutura necessária e conclusão do método conforme exigências da professora | [Antonio Carvalho](https://github.com/antonioscarvalho) |
