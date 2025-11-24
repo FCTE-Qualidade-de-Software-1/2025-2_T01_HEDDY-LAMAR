@@ -129,7 +129,70 @@ Durante a execução dos testes funcionais e de fluxo (totalizando mais de 8 int
 
 #### 3.5.4. Resultado da Métrica M4 — Esforço de Implantação Percebido
 
-#### 3.5.5. Resultado da Métrica M5 - Compatibilidade Entre Navegadores
+#### 3.5.5. Resultado da Métrica M5 — Compatibilidade Entre Navegadores
+
+**Objetivo:** Validar se os principais fluxos de uso funcionam corretamente e sem erros nos navegadores suportados.
+
+**Navegadores Avaliados:**
+
+- [Mozilla Firefox](https://drive.google.com/drive/folders/1exkM2vTe1Nal6MyOCxa8WnGIWEbHUPQX?usp=sharing)  
+- [Google Chrome](https://drive.google.com/drive/folders/1Z0f8OaT-rpCIE8TRl7d0Ezw9cmpXMuVO?usp=sharing) 
+- [Microsoft Edge](https://drive.google.com/drive/folders/1qvSvxk2ZVppUILlRiFkekImgGg3GL519?usp=sharing) 
+
+Os testes foram realizados diretamente na plataforma **Cal.com**.
+
+---
+
+### 3.5.5.1. Método de Verificação
+
+Foram analisadas **duas páginas principais** relacionadas a:
+
+- Reuniões  
+- Eventos  
+
+Em cada navegador foram executadas ações essenciais do uso do sistema, contemplando:
+
+- Criação de informações  
+- Consulta e navegação entre elementos  
+- Atualização e reagendamento  
+- Cancelamento ou exclusão de registros  
+
+Também foram verificadas as seguintes dimensões técnicas:
+
+- Consistência da interface e comportamento visual
+- Funcionamento de recursos dependentes de JavaScript
+- Erros visíveis ao usuário
+- Registros no console e comportamento de rede
+
+---
+
+### 3.5.5.2. Resultados Observados
+
+Durante os testes:
+
+- A interface permaneceu **coerente e estável** em todos os navegadores.
+- Todos os fluxos avaliados foram executados **com sucesso**, sem interrupções ou falhas.
+- **Nenhum log de erro foi identificado no console** durante as interações.
+
+---
+
+### 3.5.5.3. Métrica Final
+
+- **Fluxos Testados:** 2
+- **Fluxos Bem-sucedidos:** 2
+
+$$Resultado (M5) = \left( \frac{2}{2} \right) \times 100 = 100\%$$
+
+> **Julgamento M5:** **Excelente**  
+O sistema apresentou comportamento consistente e funcional em todos os navegadores avaliados, atendendo plenamente aos critérios de compatibilidade.
+
+---
+
+**Entrada:** Casos de teste padronizados  
+**Saída:** 100% dos fluxos executados sem erro por navegador  
+**Evidências:**  [Capturas de tela e registros técnicos disponíveis no Drive](https://drive.google.com/drive/folders/1548MaV_Aqxt4u7Eh4xjfZ44Y9GKlfbg_?usp=sharing)
+
+---
 
 #### 3.5.6. Resultado da Métrica M6 — Compatibilidade Entre Dispositivos
 
@@ -147,6 +210,7 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | **M4 (Ausência de Erros)** | 0 erros | Excelente |
 
 **Parecer Final:** O software atende plenamente aos requisitos funcionais estabelecidos para gestão de agendamentos, apresentando robustez tanto em operações isoladas quanto em fluxos complexos de longa duração.
+
 
 ## Histórico de Versões
 
