@@ -36,6 +36,8 @@ nav:
     - "2° Objetivo de Medição: Portabilidade": fase_2/obj_portabilidade.md
   - Fase 3 - Plano da Avaliação:
     - "Fase 03 - Plano de Execução da Avaliação": fase_3/index.md
+  - Fase 4 - Execução da Avaliação:
+    - "Fase 4 - Execução da Avaliação": fase_4/index.md
 
 plugins:
   - minify
