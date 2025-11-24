@@ -119,6 +119,22 @@ Durante a execução dos testes funcionais e de fluxo (totalizando mais de 8 int
 
 ---
 
+### 3.5 Portabilidade
+
+#### 3.5.1. Resultado da Métrica M1 — Taxa de Sucesso de Instalação em Múltiplos Ambientes
+
+#### 3.5.2. Resultado da Métrica M2 — Tempo Médio Estimado de Implantação
+
+#### 3.5.3. Resultado da Métrica M3 — Qualidade Percebida da Documentação de Instalação
+
+#### 3.5.4. Resultado da Métrica M4 — Esforço de Implantação Percebido
+
+#### 3.5.5. Resultado da Métrica M5 - Compatibilidade Entre Navegadores
+
+#### 3.5.6. Resultado da Métrica M6 — Compatibilidade Entre Dispositivos
+
+#### 3.5.7. Resultado da Métrica M7 — Clareza e Autonomia na Configuração das Dependências Externas
+
 ## 4. Conclusão da Avaliação Funcional
 
 Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um nível elevado de maturidade no quesito **Adequação Funcional**.
@@ -137,3 +153,4 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
 | `1.0`  | 23/11/2025 | Criação da estrutura inicial da página e adição dos resultados das metricas m1 ao m4 da adequação funcional| [Vinicius Alves](https://github.com/Vinialves2020) |
+| `1.1`  | 24/11/2025 | Organizando espaço para métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
