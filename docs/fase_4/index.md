@@ -317,7 +317,7 @@ No Windows 11 a tentativa de instalação do Cal.com também apresentou diversas
 **Resultado:** Falha, a aplicação resultou em um erro HTTP 500 (Internal Server Error) após a execução, mesmo tendo sido seguidas exatamente todas as etapas especificadas na documentação de instalação via Docker. A  documentação não oferece nenhuma seção de solução do problema ou workaround para o erro encontrado. 
 
 <div align="center">
-  <strong>Tentativa de intalação via Docker</strong>
+  <strong>Tentativa de instalação via Docker</strong>
   <br>
   <img src="../assets/fase4/erro500.png" alt="Falha de execução do docker compose up">
   <br>
