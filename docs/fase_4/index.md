@@ -558,6 +558,30 @@ A documentação fornece instruções relativamente claras e completas para inst
 
 ### 3.8.4. Resultado da Métrica M4 — Esforço de Implantação Percebido
 
+**Objetivo:** Medir esforço cognitivo/técnico (1–5)
+
+#### 3.8.4.1 Classificação do Esforço
+
+|Nível de Esforço | Muito Fácil (1) | Fácil (2) | Moderado (3) | Difícil (4) | Muito Difícil (5) |
+|:-: |:-: |:-: | :-:|:-:|:-:|
+| Percebido | | | | | ❌ | 
+
+---
+
+#### 3.8.4.2 Justificativa 
+
+As quatro tentativas de instalação local do Cal.com foram registradas como Falha. Esta série de falhas justifica a alta classificação na métrica de Esforço de Implantação Percebido, que atingiu o nível Insatisfatório. O alto esforço não vem da complexidade da execução técnica, mas sim de problemas de inicialização e configuração (como URLs incorretas e falha de migrações), que exigiram um troubleshooting extensivo. Tal esforço cognitivo e técnico vai além do escopo coberto pela documentação oficial, exigindo das pessoas que tentarem implementar, um conhecimento aprofundado para diagnosticar e contornar erros críticos de back-end na tentativa de rodar o projeto localmente. 
+
+---
+
+#### 3.8.4.2 Conclusão
+
+**Q3: O esforço necessário para configurar e implantar uma instância própria do Cal.com é considerado baixo?**
+
+Consequentemente, chegamos a mesma conclusão da métrica 2, com novas evidências que  refutam a Hipótese H3.1, demonstrando que o esforço de implantação não é baixo mesmo em ambientes baseados em Docker.
+
+---
+
 ### 3.8.5. Resultado da Métrica M5 — Compatibilidade Entre Navegadores
 
 **Objetivo:** Validar se os principais fluxos de uso funcionam corretamente e sem erros nos navegadores suportados.
@@ -651,6 +675,7 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | `1.3`  | 25/11/2025 | Adiciona métrica 1 de portabilidade | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.4`  | 25/11/2025 | Adiciona métricas 5 e 6 de adequação funcional | [Atyrson Souto](https://github.com/Atyrson) |
 | `1.5`  | 26/11/2025 | Aprimorando a métrica 1 de portabilidade e adicionando a métrica 2 | [Cairo Florenço](https://github.com/CA1RO) |
+| `1.6`  | 26/11/2025 | Adicionando a métrica 4 | [Cairo Florenço](https://github.com/CA1RO) |
 
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
