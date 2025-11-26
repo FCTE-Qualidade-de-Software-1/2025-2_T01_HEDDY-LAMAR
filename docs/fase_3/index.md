@@ -248,7 +248,7 @@ Após a execução:
 **Objetivo:** Validar se o software pode ser instalado corretamente em múltiplos ambientes
 
 **Passos de Execução:**
-1. Seguir instruções oficiais de instalação em pelo menos 3 ambientes distintos (Ubuntu, Windows, macOS)
+1. Seguir instruções oficiais de instalação em pelo menos 2 ambientes distintos (Ubuntu e Windows)
 2. Registrar para cada tentativa: sucesso/erro, ponto de falha e logs
 3. Documentar workarounds necessários
 

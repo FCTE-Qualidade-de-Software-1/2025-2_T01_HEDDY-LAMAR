@@ -302,6 +302,35 @@ A tentativa de instalação do Cal.com em ambiente local apresentou múltiplas f
 
 ---
 
+#### 3.8.1.2. Registro de Execução (Windows 11 Pro 25H2)
+
+No Windows 11 a tentativa de instalação do Cal.com também apresentou diversas falhas, muitas delas iguais as que foram mostradas nas tentativas anteriores (Windows 10 Home 22H2). 
+
+**Tentativa 1 — Instalação via Yarn (método recomendado pelo repositório)**  
+
+**Resultado:** Falha, apresentando os mesmos erros já reportados na execução de Windows 10.
+
+---
+
+**Tentativa 2 — Instalação via Docker / Docker Compose**
+
+**Resultado:** Falha, a aplicação resultou em um erro HTTP 500 (Internal Server Error) após a execução, mesmo tendo sido seguidas exatamente todas as etapas especificadas na documentação de instalação via Docker. A  documentação não oferece nenhuma seção de solução do problema ou workaround para o erro encontrado. 
+
+<div align="center">
+  <strong>Tentativa de instalação via Docker</strong>
+  <br>
+  <img src="../assets/fase4/erro500.png" alt="Falha de execução do docker compose up">
+  <br>
+  <em>Autor: <a href="https://github.com/CA1RO">Cairo Florenço</a></em>
+
+</div>
+
+**Evidência de tentativa:** https://www.youtube.com/watch?v=vmhYazac73E
+
+
+---
+
+
 #### 3.8.1.3. Evidências
 
 Como nenhuma instalação obteve sucesso, **não foi possível acessar o sistema localmente nem gerar screenshots de funcionamento**.
@@ -313,6 +342,7 @@ Foram registrados:
 - Erros de virtualização no Docker Desktop
 - Falha final do `docker compose up`, sem containers estáveis
 - Anotações sobre lacunas na documentação (“não explica como iniciar o projeto”)
+- erro HTTP 500
 
 <div align="center">
   <strong>Falha yarn e docker compose up</strong>
@@ -329,7 +359,7 @@ Foram registrados:
 
 | Total de Ambientes Testados | Instalações com Sucesso | Resultado |
 |------------------------------|--------------------------|-----------|
-| 1 | 0 | **0% de sucesso** |
+| 2 | 0 | **0% de sucesso** |
 
 ---
 
@@ -352,7 +382,7 @@ De acordo com os critérios definidos na Fase 2:
 **Q1 – Documentação de Self-Hosting**  
 O processo de self-hosting (auto-hospedagem) do Cal.com é bem documentado e pode ser executado com sucesso em diferentes ambientes de servidor?
 
-A instalação local do Cal.com apresentou diversos obstáculos técnicos no Windows 10 Home 22H2:
+A instalação local do Cal.com apresentou diversos obstáculos técnicos no Windows 10 Home 22H2 e Windows 11 Pro 25H2:
 
 - dependências difíceis de resolver,  
 - falhas persistentes no Yarn,  
@@ -363,7 +393,59 @@ A instalação local do Cal.com apresentou diversos obstáculos técnicos no Win
 > **Conclusão:** Com base nos resultados da Métrica 7.1 (0% de sucesso na instalação), a resposta à Q1 é **negativa**. A documentação atual apresenta lacunas significativas e **não permite executar o processo de auto-hospedagem de forma confiável em diferentes ambientes**, comprometendo a portabilidade e a reprodutibilidade do processo de instalação.
 
 
+---
+
 ### 3.8.2. Resultado da Métrica M2 — Tempo Médio Estimado de Implantação
+
+**Objetivo:** Medir o tempo até o sistema entrar em funcionamento.
+
+#### 3.8.2.1. Tempo Médio Estimado de Implantação
+
+Para essa etapa as medições serão feitas com base na tentativa de instalação gravada. (https://www.youtube.com/watch?v=vmhYazac73E).
+
+| Métrica | Valor Registrado | Observações |
+|------------------|-----------|-------------|
+| Instalação | 1 (Tentativa de instalação do Cal.com) | Medição para esta instalação. |
+| Tempo Total Gasto | 55 minutos | Duração da tentativa: Início da clonagem até a desistência. |
+| Aplicação Acessível | Não | Falha na implantação (Erro HTTP 500 no localhost:3000). |
+| Saída (Tempo Médio) | Não Calculável | O tempo de 55 minutos não pode ser registrado como "Tempo de Implantação" porque o sistema não entrou em funcionamento. |
+| Critério de Julgamento | Insatisfatória |  Embora o tempo esteja dentro da faixa "Boa" (31–60 min), a falha na entrega do objetivo (sistema acessível) classifica o resultado como Insatisfatório para a métrica de tempo de implantação. |
+
+
+---
+
+#### 3.8.2.2. Breakdown por Etapa
+
+| Etapa de Execução | Duração (Minutos) | Percentual | Observação e Impacto |
+|------------------|-----------|-------------|------|
+| 1. Infraestrutura Base | 13 | 23.6% | Clonagem (3 min) + Subida do Docker (10 min). Tempo esperado e aceitável. |
+| 2. Execução de Comandos | 3 | 5.5% | Tempo ativo de execução (baixo). |
+| 3. Overhead/Troubleshooting | 39 | 70.9% | Gargalo Principal: Leitura, diagnóstico e tentativas de resolução de erros. |
+| TOTAL | 55 minutos | 100% | |
+
+---
+
+#### 3.8.2.3. Detalhamento do Gargalo (39 minutos de Troubleshooting)
+
+O tempo de Troubleshooting foi dividido em dois problemas distintos, ambos causados por uma documentação ou processo de inicialização insuficiente:
+
+1. Erros de Conectividade do .env: Grande parte do tempo foi gasto para diagnosticar e corrigir URLs de banco de dados e Redis ausentes/incorretas para o ambiente Docker Compose.
+
+2. Erro HTTP 500 Final: Após corrigir as configurações iniciais, o tempo restante foi gasto tentando diagnosticar o erro HTTP 500, que indica uma falha de inicialização da aplicação.
+
+---
+
+#### 3.8.2.4. Conclusão
+
+O objetivo de medir o tempo até o sistema entrar em funcionamento não foi atingido.
+
+**Q3: O esforço necessário para configurar e implantar uma instância própria do Cal.com é considerado baixo?**
+
+* Refutação da Hipótese: A necessidade de gastar 70,9% do tempo (39 minutos) em troubleshooting manual para corrigir erros de configuração e falhas de inicialização (HTTP 500) refuta a ideia de que o esforço de implantação é baixo em ambientes Docker.
+
+* Ponto Crítico: A maior parte do tempo foi consumida em diagnóstico de erros que não estavam inclusos no passo a passo da documentação.
+
+---
 
 ### 3.8.3. Resultado da Métrica M3 — Qualidade Percebida da Documentação de Instalação
 
@@ -475,6 +557,30 @@ A documentação fornece instruções relativamente claras e completas para inst
 ---
 
 ### 3.8.4. Resultado da Métrica M4 — Esforço de Implantação Percebido
+
+**Objetivo:** Medir esforço cognitivo/técnico (1–5)
+
+#### 3.8.4.1 Classificação do Esforço
+
+|Nível de Esforço | Muito Fácil (1) | Fácil (2) | Moderado (3) | Difícil (4) | Muito Difícil (5) |
+|:-: |:-: |:-: | :-:|:-:|:-:|
+| Percebido | | | | | ❌ | 
+
+---
+
+#### 3.8.4.2 Justificativa 
+
+As quatro tentativas de instalação local do Cal.com foram registradas como Falha. Esta série de falhas justifica a alta classificação na métrica de Esforço de Implantação Percebido, que atingiu o nível Insatisfatório. O alto esforço não vem da complexidade da execução técnica, mas sim de problemas de inicialização e configuração (como URLs incorretas e falha de migrações), que exigiram um troubleshooting extensivo. Tal esforço cognitivo e técnico vai além do escopo coberto pela documentação oficial, exigindo das pessoas que tentarem implementar, um conhecimento aprofundado para diagnosticar e contornar erros críticos de back-end na tentativa de rodar o projeto localmente. 
+
+---
+
+#### 3.8.4.2 Conclusão
+
+**Q3: O esforço necessário para configurar e implantar uma instância própria do Cal.com é considerado baixo?**
+
+Consequentemente, chegamos a mesma conclusão da métrica 2, com novas evidências que  refutam a Hipótese H3.1, demonstrando que o esforço de implantação não é baixo mesmo em ambientes baseados em Docker.
+
+---
 
 ### 3.8.5. Resultado da Métrica M5 — Compatibilidade Entre Navegadores
 
@@ -594,7 +700,9 @@ Em contrapartida, os testes realizados diretamente na aplicação demonstraram q
 | `1.2`  | 25/11/2025 | Adiciona métrica 7 de adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.3`  | 25/11/2025 | Adiciona métrica 1 de portabilidade | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.4`  | 25/11/2025 | Adiciona métricas 5 e 6 de adequação funcional | [Atyrson Souto](https://github.com/Atyrson) |
-| `1.5`  | 26/11/2025 | Sintetização e conclusão inicial das métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
+| `1.5`  | 26/11/2025 | Aprimorando a métrica 1 de portabilidade e adicionando a métrica 2 | [Cairo Florenço](https://github.com/CA1RO) |
+| `1.6`  | 26/11/2025 | Adicionando a métrica 4 | [Cairo Florenço](https://github.com/CA1RO) |
+| `1.7`  | 26/11/2025 | Sintetização e conclusão inicial das métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
