@@ -437,11 +437,30 @@ Notas atribuídas por dimensão:
 | Dimensão | Nota |
 |---------|------|
 | Completude | 4.0 |
-| Clareza | 3.8 |
-| Exemplos | 4.2 |
+| Clareza | 3.6 |
+| Exemplos | 3.2 |
 | Troubleshooting | 3.2 |
 
-**Cálculo:** (4.0 + 3.8 + 4.2 + 3.2) / 4 = 3.8
+**Cálculo:** (4.0 + 3.6 + 3.2 + 3.2) / 4 = 3.5
+
+$$Resultado (M3): \left( \frac{3,5}{5} \right) = \left( \frac{x}{100} \right)$$
+
+\[
+x = \frac{3,5 \cdot 100}{5}
+\]
+
+\[
+x = \frac{350}{5}
+\]
+
+\[
+x = 70
+\]
+
+\[
+\therefore Resultado\,(M3) = 70\%
+\]
+
 
 
 > **Julgamento M3:** **Boa**  
@@ -450,7 +469,7 @@ A documentação fornece instruções relativamente claras e completas para inst
 ---
 
 **Entrada:** Experiência de instalação  
-**Saída:** Nota final (3.8) + comentários qualitativos  
+**Saída:** Nota final (70%) + comentários qualitativos  
 **Evidências:** Capturas, logs e formulário avaliativo interno
 
 ---
