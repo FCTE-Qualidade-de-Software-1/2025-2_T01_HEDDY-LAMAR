@@ -649,6 +649,73 @@ O sistema apresentou comportamento consistente e funcional em todos os navegador
 
 ### 3.8.6. Resultado da Métrica M6 — Compatibilidade Entre Dispositivos
 
+**Objetivo:** Validar se a interface do sistema se adapta corretamente a diferentes tamanhos de tela (responsividade).
+
+**Dispositivos Simulados:**
+
+- **Desktop (1920x1080):** Layout padrão
+- **Tablet (768x1024):** Visualização intermediária
+- **Mobile (375x667):** Tela pequena
+
+---
+
+#### 3.8.6.1. Método de Verificação
+
+Foram executados os mesmos fluxos da Métrica 8.5 (Compatibilidade entre Navegadores) utilizando as ferramentas de simulação de dispositivos do Google Chrome.
+
+O foco da análise foi:
+
+- **Quebras de layout:** Elementos sobrepostos, desalinhados ou fora da tela.
+- **Legibilidade:** Tamanho de fontes e espaçamentos.
+- **Funcionalidade de componentes:** Menus, botões e formulários em telas menores.
+
+---
+
+#### 3.8.6.2. Resultados Observados
+
+- **Desktop e Tablet:** A interface se comportou de maneira **adequada**, sem quebras de layout ou perda de funcionalidade.
+- **Mobile:** A experiência de uso **não foi comprometida**, mas foram identificadas oportunidades de melhoria no aproveitamento de tela e na disposição de alguns elementos.
+
+**Evidência:**
+
+<div align="center">
+  <strong>Melhoria de layout em tela de agendamento mobile</strong>
+  <br>
+  <img src="../assets/fase4/mobile_m6.png" alt="Oportunidade de melhoria no layout mobile">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+
+</div>
+
+<div align="center">
+  <strong>Funcionamento adequado em telas de tablet</strong>
+  <br>
+  <img src="../assets/fase4/execucao_tablet_m6.png.png" alt="Layout de tablet funcionando corretamente">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+
+</div>
+
+---
+
+#### 3.8.6.3. Métrica Final
+
+- **Fluxos Testados em Desktop:** 2 (100% sucesso)
+- **Fluxos Testados em Tablet:** 2 (100% sucesso)
+- **Fluxos Testados em Mobile:** 2 (100% sucesso)
+
+$$Resultado (M6) = \left( \frac{3}{3} \right) \times 100 = 100\%$$
+
+> **Julgamento M6:** **Excelente**
+O sistema é totalmente funcional em desktops, tablets e dispositivos móveis. Embora a experiência mobile seja funcional, há espaço para melhorias de layout para otimizar o aproveitamento de tela.
+
+---
+
+**Entrada:** Casos de teste padronizados
+**Saída:** Taxa de sucesso de adaptação por dispositivo
+
+---
+
 ### 3.8.7. Resultado da Métrica M7 — Clareza e Autonomia na Configuração das Dependências Externas
 
 ## 4. Conclusão da Avaliação Funcional
@@ -701,6 +768,7 @@ Em contrapartida, os testes realizados diretamente na aplicação demonstraram q
 | `1.5`  | 26/11/2025 | Aprimorando a métrica 1 de portabilidade e adicionando a métrica 2 | [Cairo Florenço](https://github.com/CA1RO) |
 | `1.6`  | 26/11/2025 | Adicionando a métrica 4 | [Cairo Florenço](https://github.com/CA1RO) |
 | `1.7`  | 26/11/2025 | Sintetização e conclusão inicial das métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
+| `1.8`  | 26/11/2025 | Adicionando e atualizando a métrica 6 | [Pedro Braga](https://github.com/Stain19) |
 
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
