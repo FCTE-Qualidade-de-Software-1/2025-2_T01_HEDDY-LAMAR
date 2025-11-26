@@ -664,11 +664,11 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | **M3 (Fluxo Completo)** | 100% | Excelente |
 | **M4 (Ausência de Erros)** | 0 erros | Excelente |
 
-**Parecer Final:** O software atende plenamente aos requisitos funcionais estabelecidos para gestão de agendamentos, apresentando robustez tanto em operações isoladas quanto em fluxos complexos de longa duração.
+**Parecer Final sobre Adequação Funcional:** O software atende plenamente aos requisitos funcionais estabelecidos para gestão de agendamentos, apresentando robustez tanto em operações isoladas quanto em fluxos complexos de longa duração.
 
-## **4.2 Portabilidade**
+### 4.2 Portabilidade
 
-### **Tabela Consolidada das Métricas de Portabilidade (M1–M5)**
+### *Tabela Consolidada das Métricas de Portabilidade (M1–M5)*
 
 | **Métrica** | **Resultado Numérico** | **Classificação** |
 |------------|:----------------------:|------------------|
@@ -678,9 +678,7 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | **M4 — Esforço Percebido de Implantação** | **Alto** *(Qualitativo)* | **Ruim** |
 | **M5 — Compatibilidade Entre Navegadores** | **100%** | **Excelente** |
 
-### **Parecer Final sobre Portabilidade**
-
-Com base na avaliação conduzida nas métricas definidas para esta fase, pode-se concluir que a portabilidade do **Cal.com** apresenta resultados heterogêneos, com desempenho significativamente distinto entre as dimensões avaliadas.
+**Parecer Final sobre Portabilidade**: Com base na avaliação conduzida nas métricas definidas para esta fase, pode-se concluir que a portabilidade do **Cal.com** apresenta resultados heterogêneos, com desempenho significativamente distinto entre as dimensões avaliadas.
 
 Os testes evidenciaram que, embora o sistema seja funcional e apresente **excelente compatibilidade entre navegadores modernos (M5)**, os processos relacionados à instalação em ambiente local apresentaram **graves limitações**, especialmente em sistemas Windows, o que resultou em **0% de sucesso na Métrica M1**.
 
