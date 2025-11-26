@@ -46,7 +46,7 @@ $$Resultado (M1) = \left( \frac{6}{6} \right) \times 100 = 100\%$$
 "Julgamento M1: Excelente"
     O software apresentou 100% de cobertura das funcionalidades essenciais listadas, enquadrando-se no critério **Excelente (≥90%)**.
 
----
+--
 
 ### 3.2. Resultado da Métrica M2 — Taxa de Sucesso em Execução
 
@@ -70,7 +70,7 @@ $$Resultado (M2) = \left( \frac{3}{3} \right) \times 100 = 100\%$$
 "Julgamento M2: Excelente"
     A funcionalidade demonstrou estabilidade total nas repetições, atingindo o critério **Excelente (≥95%)**.
 
----
+--
 
 ### 3.3. Resultado da Métrica M3 — Taxa de Sucesso dos Fluxos (Ponta a Ponta)
 
@@ -96,7 +96,7 @@ $$Resultado (M3) = \left( \frac{5}{5} \right) \times 100 = 100\%$$
 "Julgamento M3: Excelente"
     O sistema permitiu realizar todo o ciclo de vida do agendamento sem interrupções ou falhas de integridade em todas as tentativas. Classificação: **Excelente**.
 
----
+--
 
 ### 3.4. Resultado da Métrica M4 — Ocorrência de Erros Visíveis
 
@@ -117,7 +117,7 @@ Durante a execução dos testes funcionais e de fluxo (totalizando mais de 8 int
 
 "Julgamento M4: Excelente"
     Não foram identificadas mensagens de erro (Flash messages, erros 404/500 no console ou travamentos) durante o período de teste.
-    **Critério Atingido:** Excelente (0 erros).
+    **Critério Atingido:** Excelente (0 erros)
 
 ### 3.5. Resultado da Métrica M5 — Percentual de Funcionalidades Esperadas Ausentes
 
@@ -256,7 +256,7 @@ A hipótese é **confirmada** pelos resultados obtidos:
 
 ### 3.8 Portabilidade
 
-#### 3.8.1. Resultado da Métrica M1 — Taxa de Sucesso de Instalação em Múltiplos Ambientes
+### 3.8.1. Resultado da Métrica M1 — Taxa de Sucesso de Instalação em Múltiplos Ambientes
 
 **Objetivo:**  
 Avaliar se o Cal.com pode ser instalado corretamente em diferentes ambientes, seguindo a documentação oficial.  
@@ -363,15 +363,13 @@ A instalação local do Cal.com apresentou diversos obstáculos técnicos no Win
 > **Conclusão:** Com base nos resultados da Métrica 7.1 (0% de sucesso na instalação), a resposta à Q1 é **negativa**. A documentação atual apresenta lacunas significativas e **não permite executar o processo de auto-hospedagem de forma confiável em diferentes ambientes**, comprometendo a portabilidade e a reprodutibilidade do processo de instalação.
 
 
-#### 3.8.2. Resultado da Métrica M2 — Tempo Médio Estimado de Implantação
+### 3.8.2. Resultado da Métrica M2 — Tempo Médio Estimado de Implantação
 
-#### 3.8.3. Resultado da Métrica M3 — Qualidade Percebida da Documentação de Instalação
+### 3.8.3. Resultado da Métrica M3 — Qualidade Percebida da Documentação de Instalação
 
 **Objetivo:** Avaliar clareza/completude (nota 1–5)
 
----
-
-### 3.8.3.1. Método de Verificação
+#### 3.8.3.1. Método de Verificação
 
 A documentação de instalação disponibilizada no repositório oficial do **Cal.com** foi analisada no contexto de um ambiente **Windows 10 Home 22H2**, incluindo tentativas reais de instalação utilizando:
 
@@ -388,7 +386,7 @@ A avaliação considerou:
 
 ---
 
-### 3.8.3.2. Registro da Experiência com a Documentação
+#### 3.8.3.2. Registro da Experiência com a Documentação
 
 Apesar de fornecer instruções básicas, a documentação apresentou lacunas que impactaram a compreensão e execução do processo de instalação, especialmente em ambiente Windows.
 
@@ -401,16 +399,38 @@ Apesar de fornecer instruções básicas, a documentação apresentou lacunas qu
 
 ---
 
-### 3.8.3.3. Principais Lacunas Identificadas
+#### 3.8.3.3. Principais Lacunas Identificadas com suas Respectivas Evidências
 
 - **Dependências críticas não explicadas para Windows** (NVM, OpenSSL, symlinks, virtualização Docker).
+
+<div align="center">
+  <img src="../assets/fase4/instrucoes1.png" alt="Falta de instrução sobre dependências críticas">
+  <br>
+  <em>Autor: <a href="https://github.com/antonioscarvalho">Antonio Carvalho</a></em>
+
+</div><br>
+
 - **Ausência de instrução explícita de execução final**, como `yarn dev` ou `yarn start`.
-- **Documentação fragmentada** entre README, Wiki e documentação externa — obrigando navegação constante entre páginas.
+
+<div align="center">
+  <img src="../assets/fase4/yarn_dev.png" alt="Falta de instrução sobre execução final">
+  <br>
+  <em>Autor: <a href="https://github.com/antonioscarvalho">Antonio Carvalho</a></em>
+
+</div><br>
+
 - **Falta de exemplos de erro e correção**, algo essencial para setups de produção ou auto-hospedagem.
+
+<div align="center">
+  <img src="../assets/fase4/falta_de_inst._pos_erro.png" alt="Falta de exemplos de erro e correção">
+  <br>
+  <em>Autor: <a href="https://github.com/antonioscarvalho">Antonio Carvalho</a></em>
+
+</div>
 
 ---
 
-### 3.8.3.4. Cálculo da Métrica
+#### 3.8.3.4. Cálculo da Métrica
 
 Notas atribuídas por dimensão:
 
@@ -435,9 +455,9 @@ A documentação fornece instruções relativamente claras e completas para inst
 
 ---
 
-#### 3.8.4. Resultado da Métrica M4 — Esforço de Implantação Percebido
+### 3.8.4. Resultado da Métrica M4 — Esforço de Implantação Percebido
 
-#### 3.8.5. Resultado da Métrica M5 — Compatibilidade Entre Navegadores
+### 3.8.5. Resultado da Métrica M5 — Compatibilidade Entre Navegadores
 
 **Objetivo:** Validar se os principais fluxos de uso funcionam corretamente e sem erros nos navegadores suportados.
 
@@ -451,7 +471,7 @@ Os testes foram realizados diretamente na plataforma **Cal.com**.
 
 ---
 
-### 3.8.5.1. Método de Verificação
+#### 3.8.5.1. Método de Verificação
 
 Foram analisadas **duas páginas principais** relacionadas a:
 
@@ -474,7 +494,7 @@ Também foram verificadas as seguintes dimensões técnicas:
 
 ---
 
-### 3.8.5.2. Resultados Observados
+#### 3.8.5.2. Resultados Observados
 
 Durante os testes:
 
@@ -484,7 +504,7 @@ Durante os testes:
 
 ---
 
-### 3.8.5.3. Métrica Final
+#### 3.8.5.3. Métrica Final
 
 - **Fluxos Testados:** 2
 - **Fluxos Bem-sucedidos:** 2
@@ -502,9 +522,9 @@ O sistema apresentou comportamento consistente e funcional em todos os navegador
 
 ---
 
-#### 3.8.6. Resultado da Métrica M6 — Compatibilidade Entre Dispositivos
+### 3.8.6. Resultado da Métrica M6 — Compatibilidade Entre Dispositivos
 
-#### 3.8.7. Resultado da Métrica M7 — Clareza e Autonomia na Configuração das Dependências Externas
+### 3.8.7. Resultado da Métrica M7 — Clareza e Autonomia na Configuração das Dependências Externas
 
 ## 4. Conclusão da Avaliação Funcional
 
@@ -525,7 +545,7 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
 | `1.0`  | 23/11/2025 | Criação da estrutura inicial da página e adição dos resultados das metricas m1 ao m4 da adequação funcional| [Vinicius Alves](https://github.com/Vinialves2020) |
-| `1.1`  | 24/11/2025 | Organizando espaço para métricas de portabilidade e adição de métricas M3 e M5 | [Antonio Carvalho](https://github.com/antonioscarvalho) |
+| `1.1`  | 24/11/2025 | Organizando espaço e adição de métricas M3 e M5 de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 | `1.2`  | 25/11/2025 | Adiciona métrica 7 de adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.3`  | 25/11/2025 | Adiciona métrica 1 de portabilidade | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.4`  | 25/11/2025 | Adiciona métricas 5 e 6 de adequação funcional | [Atyrson Souto](https://github.com/Atyrson) |
