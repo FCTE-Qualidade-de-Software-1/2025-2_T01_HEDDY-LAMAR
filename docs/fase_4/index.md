@@ -124,7 +124,7 @@ Avaliar o impacto subjetivo das funcionalidades ausentes (M5) e redundantes (M6)
 
 ---
 
-### 3.7.1. Itens Avaliados
+#### 3.7.1. Itens Avaliados
 
 Com base nos resultados de M5 e M6, foram identificados:
 
@@ -135,7 +135,7 @@ Ao todo, **6 itens foram avaliados** quanto ao impacto percebido.
 
 ---
 
-### 3.7.2. Notas de Impacto Atribuídas
+#### 3.7.2. Notas de Impacto Atribuídas
 
 | Tipo | Item | Impacto (1–5) | Justificativa |
 |------|------|----------------|----------------|
@@ -148,13 +148,13 @@ Ao todo, **6 itens foram avaliados** quanto ao impacto percebido.
 
 ---
 
-### 3.7.3. Cálculo da Média
+#### 3.7.3. Cálculo da Média
 
 O cálculo é feito com média simples da seguite forma: (3 + 2 + 4 + 3 + 2 + 2)/6 = 16/6 = 2,67. Portanto 2,67 é avaliação de impacto percebido pelos avaliadores
 
 ---
 
-### 3.7.4. Julgamento segundo critérios definidos
+#### 3.7.4. Julgamento segundo critérios definidos
 
 Critérios de M7:  
 - **≤ 2.0** → Excelente  
@@ -169,18 +169,20 @@ O sistema apresenta alguns pontos de redundância e lacunas secundárias que ger
 
 ---
 
-### 3.7.5. Conclusão da Métrica M7
+#### 3.7.5. Conclusão da Métrica M7
 
 Com base nos resultados da Métrica M7, que avaliou o impacto subjetivo das funcionalidades ausentes (M5) e redundantes (M6), observou-se uma **média de impacto de 2,67**, enquadrada na classificação **Boa** segundo os critérios estabelecidos.
 
 Este resultado indica que, embora existam pontos de redundância (como notificações duplicadas e múltiplos caminhos para editar metadados) e algumas ausências secundárias (como Meeting Polls e aplicativo mobile nativo), o impacto percebido pelos avaliadores é **moderado** e **não compromete o funcionamento principal do sistema**.
 
-#### 3.7.5.1 Relação com a Questão Q4  
+**Relação com a Questão Q4**  
+
 **Q4:** *Qual o nível de impacto de funcionalidades ausentes ou redundantes para o uso do sistema?*
 
 Os resultados mostram que o impacto existe, é perceptível e pode gerar retrabalho ocasional ou confusão em configurações mais avançadas. No entanto, isso não afeta os fluxos essenciais de agendamento, que continuam operando de maneira íntegra.
 
-#### 3.7.5.2 Validação da Hipótese H4.1  
+**Validação da Hipótese H4.1**  
+
 **Hipótese H4.1:** *A ausência de funções secundárias pode impactar usuários avançados, mas não compromete o fluxo principal.*
 
 A hipótese é **confirmada** pelos resultados obtidos:
@@ -188,7 +190,7 @@ A hipótese é **confirmada** pelos resultados obtidos:
 - Os itens ausentes e redundantes de fato impactam **usuários avançados**, especialmente na automação (Workflows + notificações) e na configuração de formulários (Booking Questions vs Routing).
 - Entretanto, este impacto não interrompe nem prejudica o fluxo de agendamento (criar, editar, reagendar, cancelar), que permaneceu funcional em todos os testes.
 
-#### 3.7.5.3 Síntese Final  
+### 3.7.6 Síntese Final  
 > **O impacto das funcionalidades ausentes ou redundantes no Cal.com é moderado e perceptível, especialmente para usuários avançados, mas não compromete o fluxo principal de agendamento. Assim, a hipótese H4.1 é confirmada e o resultado final da métrica M7 é classificado como “Bom”.**
 
 
@@ -197,6 +199,111 @@ A hipótese é **confirmada** pelos resultados obtidos:
 ### 3.8 Portabilidade
 
 #### 3.8.1. Resultado da Métrica M1 — Taxa de Sucesso de Instalação em Múltiplos Ambientes
+
+**Objetivo:**  
+Avaliar se o Cal.com pode ser instalado corretamente em diferentes ambientes, seguindo a documentação oficial.  
+
+---
+
+#### 3.8.1.1. Registro de Execução (Windows 10 Home 22H2)
+
+A tentativa de instalação do Cal.com em ambiente local apresentou múltiplas falhas, impedindo que o sistema fosse executado. O fluxo seguido e os problemas encontrados estão listados abaixo.
+
+**Tentativa 1 — Instalação via Yarn (método recomendado pelo repositório)**  
+**Resultado:** Falha
+
+| Etapa | Resultado | Observações |
+|-------|-----------|-------------|
+|Instalação do PostgreSQL | ❌ Falhou | Problemas ao instalar e inicializar o PostgreSQL no Windows 10 Home; o serviço não iniciava corretamente, impedindo o prosseguimento da instalação local do Cal.com. |
+| Execução do passo a passo | ❌ Incompleto | A documentação não explicita claramente como iniciar o projeto após baixar as dependências. |
+| Build do projeto | ❌ Não concluído | Dependências necessárias não foram instaladas devido às falhas do Yarn. |
+
+**Principais problemas encontrados**
+- Erros de instalação do Yarn no Windows  
+- Falhas no `yarn install` ao buscar dependências críticas  
+- Repositório não explica claramente como subir o servidor após instalar dependências  
+- Processo de build abortado repetidamente
+- A instalação do PostgreSQL foi um bloqueio crítico que impossibilitou toda a instalação local. O backend do Cal.com depende integralmente de um banco ativo.
+
+---
+
+**Tentativa 2 — Instalação via Docker / Docker Compose**
+**Resultado:** Falha
+
+| Etapa | Resultado | Observações |
+|-------|-----------|-------------|
+| Execução do Docker | ❌ Não inicializou | Docker Desktop exigiu virtualização ativada, que estava desativada por padrão. |
+| Correção via BIOS | ✔ Resolvido | Foi necessário reiniciar o computador, acessar BIOS e ativar virtualização manualmente. |
+| Execução de `docker compose up` | ❌ Falha | Containers não subiram; serviços não iniciavam; a aplicação nunca ficou acessível. |
+
+#### **Principais problemas encontrados**
+- Docker Desktop não inicia sem virtualização  
+- Windows 10 Home dificulta uso estável de containers  
+- Mesmo após corrigir virtualização, o `docker compose` não conseguiu subir os serviços do Cal.com  
+- Nenhum log indicava que o backend ou frontend estavam funcionando
+
+---
+
+#### 3.8.1.3. Evidências
+
+Como nenhuma instalação obteve sucesso, **não foi possível acessar o sistema localmente nem gerar screenshots de funcionamento**.
+
+Foram registrados:
+
+- Mensagens de erro do Yarn e do `npm`
+- Falhas ao executar scripts de instalação
+- Erros de virtualização no Docker Desktop
+- Falha final do `docker compose up`, sem containers estáveis
+- Anotações sobre lacunas na documentação (“não explica como iniciar o projeto”)
+
+<div align="center">
+  <strong>Falha yarn e docker compose up</strong>
+  <br>
+  <img src="../assets/docker_compose_up.png" alt="Falha de execução do docker compose up">
+  <br>
+  <em>Autor: <a href="https://github.com/GustavoHaubert">Gustavo Haubert</a></em>
+
+</div>
+
+---
+
+#### 3.8.1.4. Cálculo da Métrica
+
+| Total de Ambientes Testados | Instalações com Sucesso | Resultado |
+|------------------------------|--------------------------|-----------|
+| 1 | 0 | **0% de sucesso** |
+
+---
+
+#### 3.8.1.5. Julgamento da Métrica
+
+De acordo com os critérios definidos na Fase 2:
+
+- **≥ 90%** → Excelente  
+- **70–89%** → Boa  
+- **50–69%** → Regular  
+- **< 50%** → Insatisfatória  
+
+**Resultado obtido:**  
+> **0% → Classificação: Insatisfatória**
+
+---
+
+#### 3.8.1.6. Conclusão
+
+**Q1 – Documentação de Self-Hosting**  
+O processo de self-hosting (auto-hospedagem) do Cal.com é bem documentado e pode ser executado com sucesso em diferentes ambientes de servidor?
+
+A instalação local do Cal.com apresentou diversos obstáculos técnicos no Windows 10 Home 22H2:
+
+- dependências difíceis de resolver,  
+- falhas persistentes no Yarn,  
+- documentação incompleta para o fluxo self-hosted,  
+- problemas no Docker devido à virtualização,  
+- e falhas mesmo após corrigir a virtualização.
+
+> **Conclusão:** Com base nos resultados da Métrica 7.1 (0% de sucesso na instalação), a resposta à Q1 é **negativa**. A documentação atual apresenta lacunas significativas e **não permite executar o processo de auto-hospedagem de forma confiável em diferentes ambientes**, comprometendo a portabilidade e a reprodutibilidade do processo de instalação.
+
 
 #### 3.8.2. Resultado da Métrica M2 — Tempo Médio Estimado de Implantação
 
@@ -294,3 +401,4 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | `1.0`  | 23/11/2025 | Criação da estrutura inicial da página e adição dos resultados das metricas m1 ao m4 da adequação funcional| [Vinicius Alves](https://github.com/Vinialves2020) |
 | `1.1`  | 24/11/2025 | Organizando espaço para métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 | `1.2`  | 25/11/2025 | Adiciona métrica 7 de adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
+| `1.3`  | 25/11/2025 | Adiciona métrica 1 de portabilidade | [Gustavo Haubert](https://github.com/GustavoHaubert) |
