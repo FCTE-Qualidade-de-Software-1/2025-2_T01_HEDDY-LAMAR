@@ -127,6 +127,51 @@ Durante a execução dos testes funcionais e de fluxo (totalizando mais de 8 int
 
 #### 3.5.3. Resultado da Métrica M3 — Qualidade Percebida da Documentação de Instalação
 
+#### 3.5.3. Resultado da Métrica M3 — Qualidade Percebida da Documentação de Instalação
+
+**Objetivo:** Avaliar a clareza e completude da documentação de instalação do software.
+
+---
+
+##### Passos de Execução
+1. Após a tentativa de instalação, cada avaliador deve atribuir uma nota (1–5) com base na experiência.
+2. Avaliar especificamente os seguintes aspectos:
+   - Completude
+   - Clareza
+   - Exemplos fornecidos
+   - Orientações de troubleshooting (erros comuns e soluções)
+
+---
+
+##### Entrada
+- Experiência prática de instalação.
+
+##### Saída
+- Média calculada das notas atribuídas.
+- Comentários qualitativos consolidados.
+
+##### Evidência
+- Formulário preenchido contendo:
+  - Notas por avaliador
+  - Notas por seção
+  - Comentários complementares
+
+---
+
+##### Critério de Julgamento
+
+| Classificação | Intervalo |
+|--------------|-----------|
+| ⭐ **Excelente** | ≥ 4.5 |
+| 👍 **Boa** | 3.5 – 4.4 |
+| ⚠️ **Regular** | 2.5 – 3.4 |
+| ❌ **Insatisfatória** | < 2.5 |
+
+---
+
+
+---
+
 #### 3.5.4. Resultado da Métrica M4 — Esforço de Implantação Percebido
 
 #### 3.5.5. Resultado da Métrica M5 — Compatibilidade Entre Navegadores
@@ -217,4 +262,4 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | Versão | Data       | Descrição                                                               | Autor                               |
 | :----- | :--------- | :---------------------------------------------------------------------- | :---------------------------------- |
 | `1.0`  | 23/11/2025 | Criação da estrutura inicial da página e adição dos resultados das metricas m1 ao m4 da adequação funcional| [Vinicius Alves](https://github.com/Vinialves2020) |
-| `1.1`  | 24/11/2025 | Organizando espaço para métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
+| `1.1`  | 24/11/2025 | Organizando espaço para métricas de portabilidade e adição de métricas M3 e M5 | [Antonio Carvalho](https://github.com/antonioscarvalho) |
