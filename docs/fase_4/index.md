@@ -117,6 +117,62 @@ Durante a execução dos testes funcionais e de fluxo (totalizando mais de 8 int
     Não foram identificadas mensagens de erro (Flash messages, erros 404/500 no console ou travamentos) durante o período de teste.
     **Critério Atingido:** Excelente (0 erros).
 
+### 3.5. Resultado da Métrica M5 — Percentual de Funcionalidades Esperadas Ausentes
+
+**Objetivo:** Identificar lacunas funcionais comparando o Cal.com com o líder de mercado de referência (Calendly), utilizando uma lista de verificação de 10 funcionalidades *core*.
+
+#### 3.5.1. Registro de Execução (Gap Analysis)
+
+| ID | Funcionalidade de Referência | Status | Justificativa / Observação | Evidência |
+| :--- | :--- | :--- | :--- | :--- |
+| **M5-01** | Meeting Polls (Votação de Horário) |  **Ausente** | Funcionalidade nativa de enquete para grupos não encontrada no núcleo do produto. | [M5-01\_Polls\_Missing.png](https://drive.google.com/drive/folders/1K-R6WRpFUiBvfT5M2bC_vCokCxclU83A?usp=drive_link) |
+| **M5-02** | App Nativo Mobile (iOS/Android) |  **Ausente** | Não há app oficial nas lojas; a solução depende de PWA/Web Responsiva. | [M5-02\_AppStore\_Empty.png](https://drive.google.com/drive/folders/1Z7lmmNqgs2avypnoZYLNJ9-zJlOn5MeV?usp=drive_link) |
+| **M5-03** | Routing Forms (Roteamento) |  Presente | Disponível via Apps. Permite lógica condicional. | [M5-03\_Routing.png](https://drive.google.com/drive/folders/1K5mUrZRXMrg0J9o3A8qyBsMf8KyJxL7w?usp=drive_link) |
+| **M5-04** | Agendamento Round-Robin |  Presente | Distribuição cíclica disponível em Event Types de equipe. | [M5-04\_RoundRobin.png](https://drive.google.com/drive/folders/1w8LjlbNDTeKsERMs7UcLC1IlOQWmUH8n?usp=drive_link) |
+| **M5-05** | Workflows (Automação SMS/Email) |  Presente | Módulo completo de automação e lembretes. | [M5-05\_Workflows.png](https://drive.google.com/drive/folders/16yxnLWNd3mUFGUBmhcydz5To6KX3rPfc?usp=drive_link) |
+| **M5-06** | Pagamentos no Agendamento |  Presente | Integração nativa com Stripe disponível. | [M5-06\_Payments.png](https://drive.google.com/drive/folders/1Kt3_MSsLFWSD9d838KMFLUV-1PyFENJn?usp=drive_link) |
+| **M5-07** | Tipos de Evento Coletivos |  Presente | Suporte a agendamento multi-host (Collective). | [M5-07\_Collective.png](https://drive.google.com/drive/folders/17uFMhPTgE8NrjAgtd2K4_pMqicnr33MA?usp=drive_link) |
+| **M5-08** | Detecção de Fuso Horário |  Presente | Detecção automática funcional. | [M5-08\_Timezone.png](https://drive.google.com/drive/folders/1tKAQNKu4RXoKYPV5wj4H1NkYMKCD6dxG?usp=drive_link) |
+| **M5-09** | Volume de Integrações |  Presente | Cal.com superou a referência (45+ vs 42), cobrindo todo o ecossistema essencial. | [M5-09\_Integrations.png](https://drive.google.com/drive/folders/1pJy_OYNqIwE7AypYVYsoG5kIUILnJSUH?usp=drive_link) |
+| **M5-10** | Analytics / Insights |  Presente | Painel de visualizações e conversão disponível. | [M5-10\_Insights.png](https://drive.google.com/drive/folders/1N0N48DdU8PC-T_34Tpy_Cjml-bHM8x3w?usp=drive_link) |
+
+#### 3.5.2. Cálculo e Análise
+
+  * **Total de Funcionalidades Listadas:** 10
+  * **Funcionalidades Ausentes:** 2
+  * **Funcionalidades Parciais:** 0
+
+$$M5 = \left( \frac{2 + 0}{10} \right) \times 100 = 20\%$$
+
+"Julgamento M5: Bom"
+O software apresenta **20% de ausência** em relação às funcionalidades esperadas de referência. A cobertura funcional é robusta, superando o concorrente em integrações, com lacunas restritas apenas a cenários específicos (Votação de horários e App Mobile nativo).
+
+-----
+
+### 3.6. Resultado da Métrica M6 — Número de Funcionalidades Redundantes Identificadas
+
+**Objetivo:** Detectar duplicidades funcionais (múltiplas formas de realizar a mesma ação) que possam gerar confusão, inconsistência de dados ou aumento de carga cognitiva.
+
+#### 3.6.1. Registro de Execução
+
+Foram identificadas **4 redundâncias** confirmadas durante a exploração do sistema:
+
+| ID | Redundância Identificada | Conflito (Caminho A vs Caminho B) | Impacto Técnico | Evidência |
+| :--- | :--- | :--- | :--- | :--- |
+| **M6-01** | **Notificações Duplicadas** | *Workflows* (Novo) **vs** *Email Notifications* (Legado) | **Médio:** Permite configurar envio duplo de e-mail de confirmação (spam involuntário). | [M6-01\_EmailDuplicado.png](https://drive.google.com/drive/folders/1kLyTCRU3OiwGhI_z_Of5T8VaIax0zXvr?usp=drive_link) |
+| **M6-03** | **Coleta de Dados** | *Booking Questions* (Pós-click) **vs** *Routing Forms* (Pré-click) | **Médio:** Fragmenta a configuração de perguntas; dados ficam em locais distintos. | [M6-03\_RedundanciaDeForm.png](https://drive.google.com/drive/folders/1S_vX_OepcJWWYhCRKQv1Eg1L0-qvK9Ct?usp=drive_link) |
+| **M6-02** | **Bloqueio de Agenda** | *Date Overrides* (Nativo) **vs** *Evento Externo* (Google Cal) | **Baixo:** Duas "fontes da verdade" para bloquear dias, gerando retrabalho de gestão. | [M6-02\_ConflitoDeDia.png](https://drive.google.com/drive/folders/1D97ySy1lT6tdPaidlIp6z0uwCjieOihF?usp=drive_link) |
+| **M6-04** | **Edição de Metadados** | *Edição interna* (No evento) **vs** *Menu contextual* (Lista) | **Baixo:** Múltiplos pontos de entrada desconexos para editar título/URL, poluindo a UI. | [M6-04\_EditUI.png](https://drive.google.com/drive/folders/1JQRROXuPbjnhYwWV390quzlaYop1yfDy?usp=drive_link) |
+
+#### 3.6.2. Análise e Julgamento
+
+  * **Total de Redundâncias:** 4
+  * **Distribuição:** 2 de impacto médio, 2 de impacto baixo.
+
+"Julgamento M6: Regular"
+Foram identificadas **4 redundâncias funcionais**, enquadrando o software na classificação **Regular (3-4 redundâncias)**. A coexistência do sistema legado de notificações com o novo sistema de Workflows é o ponto de maior atenção, pois afeta diretamente a experiência do usuário final.
+
+
 ### 3.7. Resultado da Métrica M7 — Avaliação de Impacto Percebido
 
 **Objetivo da Métrica:**  
@@ -402,3 +458,4 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | `1.1`  | 24/11/2025 | Organizando espaço para métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 | `1.2`  | 25/11/2025 | Adiciona métrica 7 de adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.3`  | 25/11/2025 | Adiciona métrica 1 de portabilidade | [Gustavo Haubert](https://github.com/GustavoHaubert) |
+| `1.4`  | 25/11/2025 | Adiciona métricas 5 e 6 de adequação funcional | [Atyrson Souto](https://github.com/Atyrson) |
