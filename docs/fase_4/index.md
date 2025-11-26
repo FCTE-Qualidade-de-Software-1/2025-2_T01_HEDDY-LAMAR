@@ -46,7 +46,7 @@ $$Resultado (M1) = \left( \frac{6}{6} \right) \times 100 = 100\%$$
 "Julgamento M1: Excelente"
     O software apresentou 100% de cobertura das funcionalidades essenciais listadas, enquadrando-se no critério **Excelente (≥90%)**.
 
---
+---
 
 ### 3.2. Resultado da Métrica M2 — Taxa de Sucesso em Execução
 
@@ -70,7 +70,7 @@ $$Resultado (M2) = \left( \frac{3}{3} \right) \times 100 = 100\%$$
 "Julgamento M2: Excelente"
     A funcionalidade demonstrou estabilidade total nas repetições, atingindo o critério **Excelente (≥95%)**.
 
---
+---
 
 ### 3.3. Resultado da Métrica M3 — Taxa de Sucesso dos Fluxos (Ponta a Ponta)
 
@@ -96,7 +96,7 @@ $$Resultado (M3) = \left( \frac{5}{5} \right) \times 100 = 100\%$$
 "Julgamento M3: Excelente"
     O sistema permitiu realizar todo o ciclo de vida do agendamento sem interrupções ou falhas de integridade em todas as tentativas. Classificação: **Excelente**.
 
---
+---
 
 ### 3.4. Resultado da Métrica M4 — Ocorrência de Erros Visíveis
 
@@ -149,7 +149,7 @@ $$M5 = \left( \frac{2 + 0}{10} \right) \times 100 = 20\%$$
 "Julgamento M5: Bom"
 O software apresenta **20% de ausência** em relação às funcionalidades esperadas de referência. A cobertura funcional é robusta, superando o concorrente em integrações, com lacunas restritas apenas a cenários específicos (Votação de horários e App Mobile nativo).
 
------
+---
 
 ### 3.6. Resultado da Métrica M6 — Número de Funcionalidades Redundantes Identificadas
 
@@ -547,6 +547,8 @@ O sistema apresentou comportamento consistente e funcional em todos os navegador
 
 ## 4. Conclusão da Avaliação Funcional
 
+### 4.1. Adequação Funcional 
+
 Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um nível elevado de maturidade no quesito **Adequação Funcional**.
 
 | Métrica | Resultado Numérico | Classificação |
@@ -558,6 +560,30 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 
 **Parecer Final:** O software atende plenamente aos requisitos funcionais estabelecidos para gestão de agendamentos, apresentando robustez tanto em operações isoladas quanto em fluxos complexos de longa duração.
 
+## **4.2 Portabilidade**
+
+### **Tabela Consolidada das Métricas de Portabilidade (M1–M5)**
+
+| **Métrica** | **Resultado Numérico** | **Classificação** |
+|------------|:----------------------:|------------------|
+| **M1 — Taxa de Sucesso de Instalação em Múltiplos Ambientes** | **0%** | **Insatisfatória** |
+| **M2 — Tempo Médio Estimado de Implantação** | **N/A** *(Instalação não concluída)* | — |
+| **M3 — Qualidade Percebida da Documentação de Instalação** | **70%** | **Boa** |
+| **M4 — Esforço Percebido de Implantação** | **Alto** *(Qualitativo)* | **Ruim** |
+| **M5 — Compatibilidade Entre Navegadores** | **100%** | **Excelente** |
+
+### **Parecer Final sobre Portabilidade**
+
+Com base na avaliação conduzida nas métricas definidas para esta fase, pode-se concluir que a portabilidade do **Cal.com** apresenta resultados heterogêneos, com desempenho significativamente distinto entre as dimensões avaliadas.
+
+Os testes evidenciaram que, embora o sistema seja funcional e apresente **excelente compatibilidade entre navegadores modernos (M5)**, os processos relacionados à instalação em ambiente local apresentaram **graves limitações**, especialmente em sistemas Windows, o que resultou em **0% de sucesso na Métrica M1**.
+
+A documentação de instalação (M3) foi considerada **razoavelmente clara**, com **70% de qualidade percebida**, porém insuficiente diante das dificuldades práticas encontradas — especialmente pela falta de instruções específicas, exemplos de resolução de erros e um fluxo completo pós-instalação. Como consequência direta, o esforço percebido para implantação (M4) foi considerado **alto**, reforçando a dificuldade de realizar self-hosting sem alto grau de conhecimento técnico ou intervenção externa.
+
+Em contrapartida, os testes realizados diretamente na aplicação demonstraram que o sistema **funciona de forma consistente e estável independentemente do navegador**, obtendo **nota máxima em compatibilidade (M5)**, o que indica boa maturidade do sistema do ponto de vista de execução e uso final quando já implantado.
+
+---
+
 
 ## Histórico de Versões
 
@@ -568,6 +594,7 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | `1.2`  | 25/11/2025 | Adiciona métrica 7 de adequação funcional | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.3`  | 25/11/2025 | Adiciona métrica 1 de portabilidade | [Gustavo Haubert](https://github.com/GustavoHaubert) |
 | `1.4`  | 25/11/2025 | Adiciona métricas 5 e 6 de adequação funcional | [Atyrson Souto](https://github.com/Atyrson) |
+| `1.5`  | 26/11/2025 | Sintetização e conclusão inicial das métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
