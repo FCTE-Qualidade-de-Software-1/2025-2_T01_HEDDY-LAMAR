@@ -718,9 +718,117 @@ O sistema é totalmente funcional em desktops, tablets e dispositivos móveis. E
 
 ### 3.8.7. Resultado da Métrica M7 — Clareza e Autonomia na Configuração das Dependências Externas
 
+**Objetivo:** Avaliar se a configuração de integrações essenciais pode ser realizada de forma autônoma pelo usuário, sem necessidade de suporte técnico.
+
+**Dependências Avaliadas:**
+
+- **Google Calendar:** Sincronização de agenda
+- **Google Meet:** Criação de links de videoconferência
+- **WhatsApp:** Direcionamento para mensagem direta
+- **Microsoft Outlook:** Sincronização de agenda
+- **Microsoft Teams:** Criação de links de videoconferência
+
+---
+
+#### 3.8.7.1. Método de Verificação
+
+Cada integração foi configurada seguindo a documentação e as instruções da interface. A avaliação considerou:
+
+- **Clareza das instruções na interface.**
+- **Facilidade de obtenção de credenciais (quando necessário).**
+- **Feedback do sistema após a configuração (sucesso ou falha).**
+
+---
+
+#### 3.8.7.2. Resultados Observados
+
+- **Google Calendar e Google Meet:** A integração via OAuth foi **simples e direta**. O usuário foi guiado passo a passo, e a conexão foi estabelecida com sucesso na primeira tentativa.
+
+- **WhatsApp:** A integração é **extremamente simples**. O usuário informa um número de telefone e o sistema gera um link que redireciona automaticamente para uma conversa direta no WhatsApp. Não requer configuração técnica ou credenciais de API.
+
+- **Microsoft Outlook e Teams:** A integração segue o mesmo padrão do Google, utilizando OAuth. O usuário é direcionado para a plataforma da Microsoft e o passo-a-passo de confirmação é realizado pelos serviços da Microsoft, de forma autônoma e intuitiva. Observa-se que por tentar conectar a conta de estudante da UnB, foi necessário uma permissão de administrador, logo essa integração não foi realizada, porém pelo fato de ser integrado diretamente pela plataforma da microsoft, assume-se que é possível fazer essa integração no momento.
+
+**Evidência - Passo a Passo das Integrações:**
+
+<div align="center">
+  <strong>Passo 1: Login no Google OAuth</strong>
+  <br>
+  <img src="../assets/fase4/login_google_passo_1.png" alt="Tela inicial de login Google OAuth">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+</div>
+
+<div align="center">
+  <strong>Passo 2: Autorização do Google Calendar e Meet</strong>
+  <br>
+  <img src="../assets/fase4/login_google_passo_2.png" alt="Tela de autorização Google">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+</div>
+
+<div align="center">
+  <strong>Passo 3: Configuração do WhatsApp</strong>
+  <br>
+  <img src="../assets/fase4/integracao_whatsapp_passo_1.png" alt="Campo para inserir número de telefone WhatsApp">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+</div>
+
+<div align="center">
+  <strong>Passo 4: Preview do link WhatsApp gerado</strong>
+  <br>
+  <img src="../assets/fase4/evidencia_whatsapp.png" alt="Preview do link WhatsApp">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+</div>
+
+<div align="center">
+  <strong>Passo 5: Login no Microsoft OAuth</strong>
+  <br>
+  <img src="../assets/fase4/integracao_outlook_passo_1.png" alt="Tela inicial de login Microsoft">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+</div>
+
+<div align="center">
+  <strong>Passo 6: Autorização do Outlook e Teams</strong>
+  <br>
+  <img src="../assets/fase4/integracao_outlook_passo_2.png" alt="Tela de autorização Microsoft">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+</div>
+
+<div align="center">
+  <strong>Painel de Integrações Configuradas</strong>
+  <br>
+  <img src="../assets/fase4/evidencia_1_google.png" alt="Painel mostrando todas integrações ativas">
+  <br>
+  <em>Autor: <a href="https://github.com/Stain19">Pedro Braga</a></em>
+</div>
+
+---
+
+#### 3.8.7.3. Métrica Final
+
+- **Integrações com Configuração Autônoma:** 5 (Google Calendar, Google Meet, WhatsApp, Microsoft Outlook, Teams)
+- **Integrações com Necessidade de Conhecimento Técnico:** 0
+
+$$Resultado (M7) = \left( \frac{5}{5} \right) \times 100 = 100\%$$
+
+> **Julgamento M7:** **Excelente**
+Todas as integrações essenciais podem ser configuradas de forma autônoma e intuitiva. O sistema oferece tanto a simplicidade para usuários leigos (WhatsApp) quanto a facilidade das integrações empresariais (Google/Microsoft) através de OAuth padronizado.
+
+---
+
+**Entrada:** Casos de teste de configuração
+**Saída:** Taxa de sucesso de configuração autônoma
+**Evidências:** [Capturas de tela do processo de integração](https://drive.google.com/drive/folders/1548MaV_Aqxt4u7Eh4xjfZ44Y9GKlfbg_?usp=sharing)
+
+---
+
 ## 4. Conclusão da Avaliação Funcional
 
-### 4.1. Adequação Funcional 
+### 4.1. Adequação Funcional
 
 Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um nível elevado de maturidade no quesito **Adequação Funcional**.
 
@@ -744,6 +852,8 @@ Com base nos dados coletados na Fase 4, o software **Cal.com** demonstrou um ní
 | **M3 — Qualidade Percebida da Documentação de Instalação** | **70%** | **Boa** |
 | **M4 — Esforço Percebido de Implantação** | **Alto** *(Qualitativo)* | **Ruim** |
 | **M5 — Compatibilidade Entre Navegadores** | **100%** | **Excelente** |
+| **M6 — Compatibilidade Entre Dispositivos** | **100%** | **Excelente** |
+| **M7 — Clareza na Configuração de Dependências** | **100%** | **Regular** |
 
 ### **Parecer Final sobre Portabilidade**
 
@@ -771,6 +881,7 @@ Em contrapartida, os testes realizados diretamente na aplicação demonstraram q
 | `1.6`  | 26/11/2025 | Adicionando a métrica 4 | [Cairo Florenço](https://github.com/CA1RO) |
 | `1.7`  | 26/11/2025 | Sintetização e conclusão inicial das métricas de portabilidade | [Antonio Carvalho](https://github.com/antonioscarvalho) |
 | `1.8`  | 26/11/2025 | Adicionando e atualizando a métrica 6 | [Pedro Braga](https://github.com/Stain19) |
+| `1.9`  | 26/11/2025 | Adicionando a métrica 7 | [Pedro Braga](https://github.com/Stain19) |
 
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -782,3 +893,4 @@ Em contrapartida, os testes realizados diretamente na aplicação demonstraram q
     }
   };
 </script>
+
